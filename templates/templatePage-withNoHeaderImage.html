@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Silicon | Blog Grid With Sidebar</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Silicon - Multipurpose Technology Bootstrap Template">
+    <meta name="keywords" content="bootstrap, business, creative agency, mobile app showcase, saas, fintech, finance, online courses, software, medical, conference landing, services, e-commerce, shopping cart, multipurpose, shop, ui kit, marketing, seo, landing, blog, portfolio, html5, css3, javascript, gallery, slider, touch, creative">
+    <meta name="author" content="Createx Studio">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#6366f1">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Vendor Styles -->
+    <link rel="stylesheet" media="screen" href="assets/vendor/boxicons/css/boxicons.min.css"/>
+    <link rel="stylesheet" media="screen" href="assets/vendor/lightgallery/css/lightgallery-bundle.min.css"/>
+
+    <!-- Main Theme Styles + Bootstrap -->
+    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+
+    <!-- Page loading styles -->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .dark-mode .page-loading {
+        background-color: #0b0f19;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #9397ad;
+      }
+      .dark-mode .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #b4b7c9;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      .dark-mode .page-spinner {
+        border-color: rgba(255,255,255,.4);
+        border-right-color: transparent;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+
+    <!-- Theme mode -->
+    <script>
+      let mode = window.localStorage.getItem('mode'),
+          root = document.getElementsByTagName('html')[0];
+      if (mode !== null && mode === 'dark') {
+        root.classList.add('dark-mode');
+      } else {
+        root.classList.remove('dark-mode');
+      }
+    </script>
+
+    <!-- Page loading scripts -->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 1000);
+        };
+      })();
+    </script>
+  </head>
+
+
+  <!-- Body -->
+  <body>
+
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+
+
+    <!-- Page wrapper for sticky footer -->
+    <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+    <main class="page-wrapper">
+
+      <!-- Navbar -->
+      <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
+      <header class="header navbar navbar-expand-lg bg-light navbar-sticky">
+        <div class="container px-3">
+          <a href="index.html" class="navbar-brand pe-3">
+            <!-- <img src="assets/img/logo.svg" width="47" alt="Silicon"> -->
+            <img src="https://www1.grc.nasa.gov/wp-content/themes/nasapress/dist/images/logo-nasa.svg" width="75" alt="NASA logo">
+            <!-- <span class='navbar-title' >Multimessenger<br> Astrophysics</span> -->
+            <p class='navbar-title mt-0 mb-0' style="line-height:25px">Multimessenger<br> Astrophysics</p>
+
+          </a>
+          <div id="navbarNav" class="offcanvas offcanvas-end">
+            <div class="offcanvas-header border-bottom">
+              <h5 class="offcanvas-title">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0"> -->
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-end">
+                <li class="nav-item">
+                  <a href="components/typography.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-current="page">Missions</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">Overview</a></li>
+                    <li><a href="#" class="dropdown-item">Timeline</a></li>
+                    <li><a href="#" class="dropdown-item">Capabilities</a></li>
+                  </ul>
+                </li>
+                <!-- <li class="nav-item">
+                  <a href="components/typography.html" class="nav-link">Data</a>
+                </li> -->
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Tools</a>
+                  <div class="dropdown-menu">
+                    <div class="d-lg-flex pt-lg-3">
+                      <div class="mega-dropdown-column">
+                        <h6 class="px-3 mb-2">Analysis Software</h6>
+                        <ul class="list-unstyled mb-3">
+                          <li><a href="about-v1.html" class="dropdown-item py-1">Gamma-ray Data Tools</a></li>
+                          <li><a href="about-v2.html" class="dropdown-item py-1">X-Spec</a></li>
+                        </ul>
+                        <h6 class="px-3 mb-2">Libraries</h6>
+                        <ul class="list-unstyled mb-3">
+                          <li><a href="blog-list-with-sidebar.html" class="dropdown-item py-1">astropy</a></li>
+                          <li><a href="blog-grid-with-sidebar.html" class="dropdown-item py-1">scipy</a></li>
+                        </ul>
+                      </div>
+                      <div class="mega-dropdown-column">
+                        <h6 class="px-3 mb-2">Resources</h6>
+                        <ul class="list-unstyled mb-3">
+                          <li><a href="#" class="dropdown-item py-1">Stuff</a></li>
+                          <li><a href="#" class="dropdown-item py-1">Other Stuff</a></li>
+                          <li><a href="#" class="dropdown-item py-1">More Stuff</a></li>
+                        </ul>
+                      </div>
+
+                    </div>
+                  </div>
+                </li>
+
+                <li class="nav-item">
+                  <a href="components/typography.html" class="nav-link">GCN</a>
+                </li>                
+                <li class="nav-item">
+                  <a href="docs/getting-started.html" class="nav-link">Proposals</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-current="page">Conferences</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">Upcoming Meetings</a></li>
+                    <li><a href="#" class="dropdown-item">Past Meetings</a></li>
+                    <li><a href="#" class="dropdown-item">Presentation Resources</a></li>
+                  </ul>
+                </li>    
+                <li class="nav-item">
+                  <a href="docs/getting-started.html" class="nav-link">About</a>
+                </li>                             
+              </ul>
+            </div>     
+          </div>
+
+          <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Breadcrumb -->
+      <nav class="container pt-4 mt-lg-3" aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item">
+            <a href="index.html"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Template Page v.2</li>
+        </ol> 
+      </nav>
+
+
+
+      <!-- Page content -->
+      <section class="container mt-4 mb-lg-5 pt-lg-2 pb-5">
+
+        <!-- Page title + Layout switcher -->
+<!--         <div class="d-flex align-items-center justify-content-between mb-4 pb-1 pb-md-3">
+          <h1 class="mb-0">Blog Grid with Sidebar</h1>
+          <div class="d-flex align-items-center ms-sm-4 ms-3">
+            <a href="blog-list-with-sidebar.html" class="nav-link me-2 p-0">
+              <i class="bx bx-list-ul fs-4"></i>
+            </a>
+            <a href="blog-grid-with-sidebar.html" class="nav-link p-0 active">
+              <i class="bx bx-grid-alt fs-4"></i>
+            </a>
+          </div>
+        </div> -->
+
+
+        <!-- Blog grid + Sidebar -->
+        <div class="row">
+          <div class="col-xl-9 col-lg-8">
+            <div class="pe-xl-5">
+
+              <h1 class="border-bottom pb-4">Mission Overview</h1>
+              <div class="row pt-2 pt-md-3">
+                <div class="col-md-6">
+                  <p class="fs-lg pe-lg-4 mb-1 mb-lg-4">Mi semper risus ultricies orci pulvinar in at enim orci. Quis facilisis nunc pellentesque in ullamcorper sit. Lorem blandit arcu sapien, senectus libero, amet dapibus cursus quam. Eget pellentesque eu purus volutpat adipiscing malesuada. Purus nisi, tortor vel lacus. Donec diam molestie ultrices vitae eget pulvinar fames. Velit lacus mi purus velit justo, amet. Nascetur lobortis diam, duis orci. Vitae nibh amet lorem pellentesque.</p>
+                </div>
+                <div class="col-md-6">
+                  <p class="fs-lg ps-lg-4 mb-1 mb-lg-4">Ac at sed sit senectus massa. Massa ante amet ultrices magna porta tempor. Aliquet diam in et magna ultricies mi at. Lectus enim, vel enim egestas nam pellentesque et leo. Elit mi faucibus laoreet aliquam pellentesque sed aliquet integer massa. Orci leo tortor ornare id mattis auctor aliquam volutpat aliquet. Odio lectus viverra eu blandit nunc malesuada vitae eleifend pulvinar. In ac fermentum sit in orci.</p>
+                </div>
+              </div>
+
+
+                <!-- Content -->
+              <div class="row pt-2 pt-md-3">
+                <div>
+                  <h3 class="h5 mb-4 pb-2 fw-medium">Est quis sit phasellus proin proin fringilla eu quis. Placerat praesent blandit urna eu pellentesque dictum. Aliquam duis quam interdum quis. Urna, rutrum aenean lacus phasellus. Ipsum, ac porttitor lacus orci, cras lacus, quis leo.</h3>
+                  <h2 class="h4">Paragraph Title</h2>
+                  <p class="mb-4 pb-2">Purus ornare nisl est nec. Nunc, enim tellus pretium viverra quisque id in metus volutpat. Urna eget velit venenatis, commodo eget massa. Magna donec dictum cras nullam platea. Diam rhoncus massa lectus pellentesque tristique. Amet commodo, egestas vitae bibendum. Volutpat elit condimentum integer tortor porttitor justo vel lobortis risus. Lacinia pellentesque fermentum tellus orci mauris, velit duis eget. Commodo justo, hac ligula molestie felis, iaculis. Vitae dui at ante orci, dictum fusce. Urna, sed urna fringilla faucibus euismod aliquet nec. Quis libero, fermentum amet eu, condimentum auctor. Sit vel ipsum sem tempus gravida et. Scelerisque blandit orci, est quis. Nisi, tellus amet est nascetur habitant faucibus ornare et vivamus.</p>
+
+                  <!-- Video -->
+                  <div class="gallery mb-4 pb-2" data-video="true">
+                    <a href="https://www.youtube.com/watch?v=LDb-G8y88Sc" class="gallery-item video-item is-hovered rounded-3" data-sub-html='<h6 class="fs-sm text-light">Video inside blog post</h6>'>
+                      <img src="assets/img/blog/single/video-cover.jpg" alt="Video preview">
+                    </a>
+                  </div>
+
+                  <p class="mb-4 pb-2">Tempor donec aliquam est, a. Sit arcu tellus pharetra, bibendum hendrerit arcu, sed. Scelerisque dui enim libero sit ac sed lacus lectus. Quam in iaculis scelerisque feugiat nibh mi. Maecenas posuere lobortis praesent iaculis sagittis. Egestas vel at praesent ipsum pretium faucibus adipiscing gravida feugiat. Lacus, rhoncus velit at non nunc, quam urna, phasellus facilisis. Cursus elit posuere amet tortor at. Mi tristique congue vulputate eget in pellentesque tincidunt. In viverra est id nibh. Nunc tellus ultrices magna turpis. Viverra est morbi posuere dapibus nisi habitasse. Id tristique cursus vel metus.</p>
+
+                  <!-- Quotation -->
+                  <figure class="position-relative mb-4 ps-4">
+                    <span class="position-absolute top-0 start-0 w-3 h-100 bg-primary"></span>
+                    <blockquote class="blockquote fs-xl fw-medium text-dark ps-1 ps-sm-3">
+                      <p>Sollicitudin eget massa, elementum, purus nec fermentum vitae, elementum. Tincidunt vulputate lorem cursus id. Dictum tincidunt mi ornare tristique. Id sit elit pulvinar eu. Tempus vel, mauris sed proin aliquet vulputate cras est. Ut ornare eget a viverra.</p>
+                    </blockquote>
+                    <figcaption class="d-flex align-items-center pt-3 ps-1 ps-sm-3">
+                      <img src="assets/img/avatar/04.jpg" width="48" class="rounded-circle" alt="Jane Cooper">
+                      <div class="ps-3">
+                        <h6 class="fw-semibold lh-base mb-0">Jane Cooper</h6>
+                        <span class="fs-sm text-muted">CEO of Ipsum Company</span>
+                      </div>
+                    </figcaption>
+                  </figure>
+
+                  <p class="mb-4 pb-2">Pellentesque laoreet neque ut dictumst fames scelerisque. In malesuada orci dapibus risus tellus, amet, ultrices sagittis a. Turpis vel tincidunt tristique maecenas cursus tortor, suscipit ut. Ullamcorper at faucibus dolor tortor suspendisse suscipit senectus convallis aliquam. At orci amet facilisi nunc mi vitae iaculis diam a. Mauris venenatis sed purus cursus torte.</p>
+                  <h2 class="h4">Paragraph Title 2</h2>
+                  <p class="mb-4 pb-2">Praesent sed pulvinar posuere nisl tincidunt. Iaculis sit quam magna congue. Amet vel non aliquet habitasse. Egestas erat odio et, eleifend turpis etiam blandit interdum. Nec augue ut senectus quisque diam quis. At augue accumsan, in bibendum. A eget et, eget quisque egestas netus vel. Velit, aliquet turpis convallis ullamcorper. Scelerisque sagittis condimentum pretium in vitae etiam lacinia quis amet. Porttitor consequat, sollicitudin vivamus pharetra nibh faucibus neque, viverra. Praesent amet sed lacus vitae.</p>
+                  <h4 class="h6">
+                    <i class="bx bx-plus-circle me-1 mt-n1 align-middle fs-5 text-primary"></i>
+                    PROS
+                  </h4>
+                  <ul class="mb-4 pb-2 ps-4">
+                    <li class="mb-1">A eu, ac nunc, volutpat. Augue enim ac justo, at elementum, arcu.</li>
+                    <li class="mb-1">At sodales quam felis ullamcorper iaculis tristique. Felis, etiam felis pellentesque sit neque.</li>
+                    <li class="mb-1">Porta ipsum quis lacus eu ipsum mattis sit quis. Massa, massa lectus porttitor laoreet ultricies odio fermentum arcu quam.</li>
+                    <li class="mb-1">Accumsan arcu neque, nisl, pellentesque fames justo consequat blandit lacus. Eget odio vel nulla vel.</li>
+                    <li class="mb-1">Diam ac phasellus est, eu urna purus blandit aliquam. Vitae accumsan et pellentesque diam in.</li>
+                    <li>Tellus arcu, lectus tincidunt neque nunc. Bibendum lacus, molestie ultrices sed arcu.</li>
+                  </ul>
+                  <h4 class="h6">
+                    <i class="bx bx-minus-circle me-1 mt-n1 align-middle fs-5 text-primary"></i>
+                    CONS
+                  </h4>
+                  <ul class="mb-4 pb-2 ps-4">
+                    <li class="mb-1">Donec maecenas justo, et tortor quam elementum pharetra velit. Auctor dictum purus sollicitudin et quam vehicula amet lacus, integer.</li>
+                    <li class="mb-1">Mi elit nibh erat facilisis. Volutpat eget malesuada mi in.</li>
+                    <li class="mb-1">Tincidunt iaculis eleifend arcu egestas. Sit gravida vestibulum quam scelerisque.</li>
+                    <li class="mb-1">Ornare elit, vel, ullamcorper nunc nulla pellentesque ut varius. Vitae tortor nulla a turpis erat fermentum, rhoncus.</li>
+                    <li>Gravida cursus nunc habitant aliquet lacus. Tempus, interdum nullam non quam ipsum ultricies ac.</li>
+                  </ul>
+                  <h2 class="h4">Conclusion</h2>
+                  <p class="mb-4 pb-2">Venenatis faucibus platea gravida amet sed sed urna volutpat. Aliquam neque, mi, justo odio semper. Egestas potentiquis neque nunc, rhoncus hendrerit. Viverra gravida pretium dolor eget placerat morbi proin eget. Vestibulum vitae ultrices vel sed sit quis. Ac quis diam at nulla libero. Turpis duis magna tellus condimentum.</p>
+                  <p class="mb-4 pb-2">Velit parturient tellus tellus, congue pulvinar tellus viverra. In cum massa mattis ac. Amet vitae massa ut mi etiam. Auctor aliquam tristique felis donec eu sit nisi. Accumsan mauris eget convallis mattis sed etiam scelerisque.</p>
+
+                  <!-- Tags -->
+                  <hr class="mb-4">
+                  <div class="d-flex flex-sm-row flex-column pt-2">
+                    <h6 class="mt-sm-1 mb-sm-2 mb-3 me-2 text-nowrap">Related Tags:</h6>
+                    <div>
+                      <a href="#" class="btn btn-sm btn-outline-secondary me-2 mb-2">#lifestyle</a>
+                      <a href="#" class="btn btn-sm btn-outline-secondary me-2 mb-2">#tech</a>
+                      <a href="#" class="btn btn-sm btn-outline-secondary me-2 mb-2">#business</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Sidebar (Offcanvas below lg breakpoint) -->
+          <aside class="col-xl-3 col-lg-4">
+            <div class="offcanvas-lg offcanvas-end" id="blog-sidebar" tabindex="-1">
+
+              <!-- Header -->
+              <div class="offcanvas-header border-bottom">
+                <h3 class="offcanvas-title fs-lg">Sidebar</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#blog-sidebar"></button>
+              </div>
+
+              <!-- Body -->
+              <div class="offcanvas-body mt-4 pt-4">
+
+                <!-- Page Outline -->
+                <div class="card card-body border-0 position-relative mb-4">
+                  <span class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-primary opacity-10 rounded-3"></span>
+                  <div class="position-relative zindex-2">
+                    <h3 class="h5 mb-4">Page Outline</h3>
+                    <ul class="list-unstyled mb-3">
+                      <li class="pb-1 mb-1">
+                        <div class="mb-0">
+                          <a class="nav-link" href="#">Overview</a>
+                        </div>
+                      </li>
+                      <li class="pb-1 mb-1">
+                        <div class="mb-0">
+                          <a class="nav-link" href="#">Mission Timeline</a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="mb-0">
+                          <a class="nav-link" href="#">Mission Capabilities</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+
+                <!-- Follow Us -->
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <h5 class="mb-4">Share this page:</h5>
+                    <a href="#" class="btn btn-icon btn-sm btn-secondary btn-linkedin me-2 mb-2">
+                      <i class="bx bxl-linkedin"></i>
+                    </a>
+                    <a href="#" class="btn btn-icon btn-sm btn-secondary btn-facebook me-2 mb-2">
+                      <i class="bx bxl-facebook"></i>
+                    </a>
+                    <a href="#" class="btn btn-icon btn-sm btn-secondary btn-twitter me-2 mb-2">
+                      <i class="bx bxl-twitter"></i>
+                    </a>
+                    <a href="#" class="btn btn-icon btn-sm btn-secondary btn-instagram me-2 mb-2">
+                      <i class="bx bxl-instagram"></i>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+
+    </main>
+
+
+
+    <!-- Footer -->
+    <footer class="footer dark-mode bg-dark border-top border-light pt-5">
+      <div class="container pt-lg-4">
+        <div class="row pb-5">
+          <div class="col-lg-4 col-md-6">
+            <div class="navbar-brand text-dark p-0 me-0 mb-3 mb-lg-4">
+            <img src="https://www1.grc.nasa.gov/wp-content/themes/nasapress/dist/images/logo-nasa.svg" width="75" alt="NASA logo">
+            <!-- <h6>National Aeronautics and Space Administration</h6> -->
+            <h5 class='mt-1 mb-0'>National Aeronautics and Space Administration</h5>
+            <!-- <h6 class='mt-0 mb-0' style="line-height:25px">National Aeronautics<br> and Space Administration</h6> -->
+            </div>
+            <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                  <ul class="nav flex-column pb-lg-1 mb-lg-0 mt-3">
+                    <li><span class="h6">NASA Official: </span> Daniel Kocevski</li>
+                    <li><span class="h6">Page Editor: </span> Daniel Kocevski</li>
+                    <li><span class="h6">Page Last Updated: </span> July 13th, 2022</li>
+                  </ul>
+            </div>
+
+            <p class="pt-5">
+                <a href="https://www.nasa.gov/about/highlights/HP_Privacy.html">Privacy Policy</a>
+                 &nbsp;| &nbsp;
+                <a href="http://odeo.hq.nasa.gov/nofear.html">No Fear Act</a>
+                 &nbsp;| &nbsp;
+                <a href="https://www.nasa.gov/FOIA/index.html">FOIA</a>
+                 &nbsp;| &nbsp;
+                <a href="https://www.nasa.gov/about/highlights/HP_Privacy.html">Contact Us</a>
+
+            </p>
+          </div>
+
+          <div class="col-xl-6 col-lg-7 col-md-5 offset-xl-2 offset-md-1 pt-4 pt-md-1 pt-lg-0">
+
+            <div id="footer-links" class="row">
+              <div class="col-lg-4">
+                <h6 class="mb-2">
+                  <a href="#useful-links" class="d-block text-dark dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">Useful Links</a>
+                </h6>
+
+                <!-- Empty Column -->
+                <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+
+                </div>
+
+              </div>
+
+              <!-- MOSSAIC Column -->
+              <div class="col-lg-4 col-lg-5 mt-4 pt-0 pt-lg-0 text-end">
+                <h4 class="mt-2 mb-2">MOSSAIC</h4>
+                <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                      <ul class="nav flex-column pb-lg-1 mb-lg-0 mt-3">
+                        <li><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-0">Goddard Space Flight Center</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-0 pb-0">Marshall Space Flight Center</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-0 pb-0">multimessenger.nasa.gov</a></li>
+                      </ul>
+                </div>
+                <div class="mb-4 pb-lg-3 mt-4">
+                  <a href="#" class="btn btn-icon btn-secondary btn-facebook me-2 mb-2">
+                    <i class="bx bxl-facebook"></i>
+                  </a>
+                  <a href="#" class="btn btn-icon btn-secondary btn-twitter me-2 mb-2">
+                    <i class="bx bxl-twitter"></i>
+                  </a>
+                  <a href="#" class="btn btn-icon btn-secondary btn-instagram me-2 mb-2">
+                    <i class="bx bxl-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+
+
+    <!-- Offcanvas blog toggler -->
+    <button type="button" data-bs-toggle="offcanvas" data-bs-target="#blog-sidebar" aria-controls="blog-sidebar" class="btn btn-sm btn-primary fixed-bottom d-lg-none w-100 rounded-0">
+      <i class='bx bx-sidebar fs-xl me-2'></i>
+      Sidebar
+    </button>
+
+
+    <!-- Back to top button -->
+    <a href="#top" class="btn-scroll-top mb-4 mb-lg-0" data-scroll>
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+
+
+    <!-- Vendor Scripts -->
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/shufflejs/dist/shuffle.min.js"></script>
+    <script src="assets/vendor/lightgallery/lightgallery.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/video/lg-video.min.js"></script>
+
+    <!-- Main Theme Script -->
+    <script src="assets/js/theme.min.js"></script>
+  </body>
+</html>
