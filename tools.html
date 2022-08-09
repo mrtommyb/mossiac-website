@@ -152,6 +152,7 @@
     <main class="page-wrapper">
 
       <!-- Navbar -->
+      <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
       <header class="header navbar navbar-expand-lg bg-light navbar-sticky">
         <div class="container px-3">
           <a href="index.html" class="navbar-brand pe-3">
@@ -232,169 +233,233 @@
         </div>
       </header>
 
-      <!-- Post image (parallax) -->
-      <div class="jarallax mb-lg-5 mb-4" data-jarallax data-speed="0.35" style="height: 36.45vw; min-height: 300px;">
-        <div class="jarallax-img" style="background-image: url(assets/img/blog/single/cover-image.jpg);"></div>
-      </div>
-
       <!-- Breadcrumb -->
       <nav class="container py-4 mb-2 my-lg-3" aria-label="breadcrumb">
         <ol class="breadcrumb mb-0">
           <li class="breadcrumb-item">
             <a href="index.html"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
           </li>
-          <li class="breadcrumb-item active" aria-current="page">Multimessenger Missions</li>
+          <li class="breadcrumb-item active" aria-current="page">Tools & Resources</li>
         </ol>
       </nav>
 
       <!-- Post content + Sharing -->
-      <section class="container pb-5 mb-md-2 mb-lg-4">
+      <!-- <section class="container pb-5 mb-md-2 mb-lg-4"> -->
+      <section class="container pb-5 mb-2 mb-md-4 mb-lg-5 mt-n3 mt-lg-0">
         <div class="row gy-4">
 
           <!-- Content -->
           <div class="col-lg-9">
 
-                  <div id="overview"></div>
-                  <h1 class="border-bottom pb-4" id="Overview">Multimessenger Missions</h1>
+            <h1 class="border-bottom pb-4 mb-5" id="Overview">Tools & Resources</h1>
 
-                  <!-- <h2 class="h4">Paragraph Title</h2> -->
-                  <p class="mb-4 pb-2">Purus ornare nisl est nec. Nunc, enim tellus pretium viverra quisque id in metus volutpat. Urna eget velit venenatis, commodo eget massa. Magna donec dictum cras nullam platea. Diam rhoncus massa lectus pellentesque tristique. Amet commodo, egestas vitae bibendum. Volutpat elit condimentum integer tortor porttitor justo vel lobortis risus. Lacinia pellentesque fermentum tellus orci mauris, velit duis eget. Commodo justo, hac ligula molestie felis, iaculis. Vitae dui at ante orci, dictum fusce. Urna, sed urna fringilla faucibus euismod aliquet nec. Quis libero, fermentum amet eu, condimentum auctor. Sit vel ipsum sem tempus gravida et. Scelerisque blandit orci, est quis. Nisi, tellus amet est nascetur habitant faucibus ornare et vivamus.</p>
+            <div id="featured"></div>
+            <h2 class="h3">Featured Projects</h2>
 
-                  <!-- Image -->
-                  <div class="gallery mb-4 pb-2">
-                      <img src="assets/img/custom/AstrophysicsFleet.png">
-                    </a>
+            <!-- Item -->
+            <article class="card border-0 bg-transparent me-xl-5 mb-4 pt-4">
+              <div class="row g-0">
+                <div class="col-sm-5 position-relative bg-position-center bg-repeat-0 bg-size-cover rounded-3" style="background-image: url(assets/img/account/collection01.jpg); min-height: 15rem;">
+                  <a href="blog-single.html" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
+                    <i class="bx bx-bookmark"></i>
+                  </a>
+                </div>
+                <div class="col-sm-7">
+                  <div class="card-body px-0 pt-sm-0 ps-sm-4 pb-0 pb-sm-4">
+                    <!-- <a href="#" class="badge fs-sm text-white bg-info shadow-info text-decoration-none mb-3">Featured Project</a> -->
+                    <a href="#" class="d-table badge bg-faded-primary text-primary fs-sm mb-3">Featured Project</a>
+                    <h3 class="h4">
+                      <a href="blog-single.html">The Gamma-ray Coordinates Network</a>
+                    </h3>
+                    <p class="mb-4">Nunc aliquet scelerisque pellentesque imperdiet tortor elit, dictum. Tristique odio at dignissim viverra aliquet eleifend erat. Tellus, at arcu, egestas praesent.</p>
+                    <div class="d-flex align-items-center">
+                    <button type="button" class="btn btn-primary px-3 px-lg-4 me-3">
+                        <a>Learn More</a>
+                      </button>
+                    </div>
                   </div>
+                </div>
+              </div>
+            </article>
 
-                  <p class="mb-4 pb-2">Tempor donec aliquam est, a. Sit arcu tellus pharetra, bibendum hendrerit arcu, sed. Scelerisque dui enim libero sit ac sed lacus lectus. Quam in iaculis scelerisque feugiat nibh mi. Maecenas posuere lobortis praesent iaculis sagittis. Egestas vel at praesent ipsum pretium faucibus adipiscing gravida feugiat. Lacus, rhoncus velit at non nunc, quam urna, phasellus facilisis. Cursus elit posuere amet tortor at. Mi tristique congue vulputate eget in pellentesque tincidunt. In viverra est id nibh. Nunc tellus ultrices magna turpis. Viverra est morbi posuere dapibus nisi habitasse. Id tristique cursus vel metus.</p>
-
-                  <!-- Quotation -->
-                  <figure class="position-relative mb-4 ps-4">
-                    <span class="position-absolute top-0 start-0 w-3 h-100 bg-primary"></span>
-                    <blockquote class="blockquote fs-xl fw-medium text-dark ps-1 ps-sm-3">
-                      <p>"Because of the balanced and varied programs put forward by prior decadal surveys, small telescopes, inventive experiments, and competed missions operating across the spectrum have harnessed the creativity and technical ingenuity of the community, resulting in an intensely dynamic and rapidly evolving enterprise."</p>
-                    </blockquote>
-                    <figcaption class="d-flex align-items-center pt-3 ps-1 ps-sm-3">
-                      <img src="assets/img/custom/Astro2020.png" width="48" class="rounded-circle" alt="Jane Cooper">
-                      <div class="ps-3">
-                        <h6 class="fw-semibold lh-base mb-0">Decadal Survey on Astronomy and Astrophysics 2020</h6>
-                        <span class="fs-sm text-muted">Section 1.1.1, Page 1-2</span>
-                      </div>
-                    </figcaption>
-                  </figure>
-
-                  <p class="mb-4 pb-2">Pellentesque laoreet neque ut dictumst fames scelerisque. In malesuada orci dapibus risus tellus, amet, ultrices sagittis a. Turpis vel tincidunt tristique maecenas cursus tortor, suscipit ut. Ullamcorper at faucibus dolor tortor suspendisse suscipit senectus convallis aliquam. At orci amet facilisi nunc mi vitae iaculis diam a. Mauris venenatis sed purus cursus torte.</p>
-                  <h2 class="h4">Paragraph Title 2</h2>
-                  <p class="mb-4 pb-2">Praesent sed pulvinar posuere nisl tincidunt. Iaculis sit quam magna congue. Amet vel non aliquet habitasse. Egestas erat odio et, eleifend turpis etiam blandit interdum. Nec augue ut senectus quisque diam quis. At augue accumsan, in bibendum. A eget et, eget quisque egestas netus vel. Velit, aliquet turpis convallis ullamcorper. Scelerisque sagittis condimentum pretium in vitae etiam lacinia quis amet. Porttitor consequat, sollicitudin vivamus pharetra nibh faucibus neque, viverra. Praesent amet sed lacus vitae.</p>
-
-                  <div id="timeline"></div>
-                  <h1 class="border-bottom pb-4">Mission Timeline</h1>
-
-                  <p class="mb-4 pb-2">Praesent sed pulvinar posuere nisl tincidunt. Iaculis sit quam magna congue. Amet vel non aliquet habitasse. Egestas erat odio et, eleifend turpis etiam blandit interdum. Nec augue ut senectus quisque diam quis. At augue accumsan, in bibendum. A eget et, eget quisque egestas netus vel. Velit, aliquet turpis convallis ullamcorper. Scelerisque sagittis condimentum pretium in vitae etiam lacinia quis amet. Porttitor consequat, sollicitudin vivamus pharetra nibh faucibus neque, viverra. Praesent amet sed lacus vitae.</p>
-
-                  <h2 class="h4">Paragraph Title</h2>
-                  <p class="mb-4 pb-2">Purus ornare nisl est nec. Nunc, enim tellus pretium viverra quisque id in metus volutpat. Urna eget velit venenatis, commodo eget massa. Magna donec dictum cras nullam platea. Diam rhoncus massa lectus pellentesque tristique. Amet commodo, egestas vitae bibendum. Volutpat elit condimentum integer tortor porttitor justo vel lobortis risus. Lacinia pellentesque fermentum tellus orci mauris, velit duis eget. Commodo justo, hac ligula molestie felis, iaculis. Vitae dui at ante orci, dictum fusce. Urna, sed urna fringilla faucibus euismod aliquet nec. Quis libero, fermentum amet eu, condimentum auctor. Sit vel ipsum sem tempus gravida et. Scelerisque blandit orci, est quis. Nisi, tellus amet est nascetur habitant faucibus ornare et vivamus.</p>
-
-                  <h4 class="h6">
-                    <i class="bx bx-plus-circle me-1 mt-n1 align-middle fs-5 text-primary"></i>
-                    PROS
-                  </h4>
-                  <ul class="mb-4 pb-2 ps-4">
-                    <li class="mb-1">A eu, ac nunc, volutpat. Augue enim ac justo, at elementum, arcu.</li>
-                    <li class="mb-1">At sodales quam felis ullamcorper iaculis tristique. Felis, etiam felis pellentesque sit neque.</li>
-                    <li class="mb-1">Porta ipsum quis lacus eu ipsum mattis sit quis. Massa, massa lectus porttitor laoreet ultricies odio fermentum arcu quam.</li>
-                    <li class="mb-1">Accumsan arcu neque, nisl, pellentesque fames justo consequat blandit lacus. Eget odio vel nulla vel.</li>
-                    <li class="mb-1">Diam ac phasellus est, eu urna purus blandit aliquam. Vitae accumsan et pellentesque diam in.</li>
-                    <li>Tellus arcu, lectus tincidunt neque nunc. Bibendum lacus, molestie ultrices sed arcu.</li>
-                  </ul>
-                  <h4 class="h6">
-                    <i class="bx bx-minus-circle me-1 mt-n1 align-middle fs-5 text-primary"></i>
-                    CONS
-                  </h4>
-                  <ul class="mb-4 pb-2 ps-4">
-                    <li class="mb-1">Donec maecenas justo, et tortor quam elementum pharetra velit. Auctor dictum purus sollicitudin et quam vehicula amet lacus, integer.</li>
-                    <li class="mb-1">Mi elit nibh erat facilisis. Volutpat eget malesuada mi in.</li>
-                    <li class="mb-1">Tincidunt iaculis eleifend arcu egestas. Sit gravida vestibulum quam scelerisque.</li>
-                    <li class="mb-1">Ornare elit, vel, ullamcorper nunc nulla pellentesque ut varius. Vitae tortor nulla a turpis erat fermentum, rhoncus.</li>
-                    <li>Gravida cursus nunc habitant aliquet lacus. Tempus, interdum nullam non quam ipsum ultricies ac.</li>
-                  </ul>
-
-                  <div id="capabilities"></div>
-                  <h1 class="border-bottom pb-4 pt-5" id="Mission Timeline">Mission Capabilities</h1>
-
-                  <!-- Item -->
-                  <article class="card border-0 bg-transparent me-xl-5 mb-4 pt-4">
-                    <div class="row g-0">
-                      <div class="col-sm-5 position-relative bg-position-center bg-repeat-0 bg-size-cover rounded-3" style="background-image: url(assets/img/blog/05.jpg); min-height: 15rem;">                       
-                      </div>
-                      <div class="col-sm-7">
-                        <div class="card-body px-0 pt-sm-0 ps-sm-4 pb-0 pb-sm-4">
-                          <a href="#" class="badge fs-sm text-white bg-primary shadow-primary text-decoration-none mb-3">Gamma-rays</a>
-                          <h3 class="h4">
-                            <a href="blog-single.html">The Fermi Gamma-ray Space Telescope</a>
-                          </h3>
-                          <p class="mb-4">Nunc aliquet scelerisque pellentesque imperdiet tortor elit, dictum. Tristique odio at dignissim viverra aliquet eleifend erat. Tellus, at arcu, egestas praesent.</p>
-                          <div class="d-flex align-items-center text-muted">
-                           <div class="d-flex align-items-center">
-                            <a class="btn-link" href="#">Learn More</a>
-                           </div>
-                          </div>
-                        </div>
-                      </div>
+            <!-- Item -->
+            <article class="card border-0 bg-transparent me-xl-5 mb-4 pt-5">
+              <div class="row g-0">
+                <div class="col-sm-5 position-relative bg-position-center bg-repeat-0 bg-size-cover rounded-3" style="background-image: url(assets/img/account/collection01.jpg); min-height: 15rem;">
+                  <a href="blog-single.html" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
+                    <i class="bx bx-bookmark"></i>
+                  </a>
+                </div>
+                <div class="col-sm-7">
+                  <div class="card-body px-0 pt-sm-0 ps-sm-4 pb-0 pb-sm-4">
+                    <!-- <a href="#" class="badge fs-sm text-white bg-info shadow-info text-decoration-none mb-3">Featured Project</a> -->
+                    <a href="#" class="d-table badge bg-faded-primary text-primary fs-sm mb-3">Featured Project</a>
+                    <h3 class="h4">
+                      <a href="blog-single.html">The Gamma-ray Data Tools</a>
+                    </h3>
+                    <p class="mb-4">Nunc aliquet scelerisque pellentesque imperdiet tortor elit, dictum. Tristique odio at dignissim viverra aliquet eleifend erat. Tellus, at arcu, egestas praesent.</p>
+                    <div class="d-flex align-items-center">
+                    <button type="button" class="btn btn-primary px-3 px-lg-4 me-3">
+                        <a>Learn More</a>
+                      </button>
                     </div>
-                  </article>
+                  </div>
+                </div>
+              </div>
+            </article>
 
-                  <!-- Item -->
-                  <article class="card border-0 bg-transparent me-xl-5 mb-4 pt-5">
-                    <div class="row g-0">
-                      <div class="col-sm-5 position-relative bg-position-center bg-repeat-0 bg-size-cover rounded-3" style="background-image: url(assets/img/blog/05.jpg); min-height: 15rem;">
-                        <a href="blog-single.html" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
-                          <i class="bx bx-bookmark"></i>
-                      </div>
-                      <div class="col-sm-7">
-                        <div class="card-body px-0 pt-sm-0 ps-sm-4 pb-0 pb-sm-4">
-                          <a href="#" class="badge fs-sm text-white bg-primary shadow-primary text-decoration-none mb-3">Gamma-rays</a>
-                          <a href="#" class="badge fs-sm text-white bg-danger shadow-danger text-decoration-none mb-3">X-rays</a>
-                          <a href="#" class="badge fs-sm text-white bg-success shadow-success text-decoration-none mb-3">Optical</a>
-                          <a href="#" class="badge fs-sm text-white bg-warning shadow-warning text-decoration-none mb-3">Ultraviolet</a>
-                          <h3 class="h4">
-                            <a href="blog-single.html">The Neil Gehrels Swift Observatory</a>
-                          </h3>
-                          <p class="mb-4">Nunc aliquet scelerisque pellentesque imperdiet tortor elit, dictum. Tristique odio at dignissim viverra aliquet eleifend erat. Tellus, at arcu, egestas praesent.</p>
-                          <div class="d-flex align-items-left">
-                            <a class="btn-link" href="#">Learn More</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
+            <div class="pb-2 pb-lg-3"></div>
 
-                  <!-- Item -->
-                  <article class="card border-0 bg-transparent me-xl-5 mb-4 pt-5">
-                    <div class="row g-0">
-                      <div class="col-sm-5 position-relative bg-position-center bg-repeat-0 bg-size-cover rounded-3" style="background-image: url(assets/img/blog/05.jpg); min-height: 15rem;">
-                        <a href="blog-single.html" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
-                          <i class="bx bx-bookmark"></i>
-                        </a>
-                      </div>
-                      <div class="col-sm-7">
-                        <div class="card-body px-0 pt-sm-0 ps-sm-4 pb-0 pb-sm-4">
-                          <a href="#" class="badge fs-sm text-white bg-primary shadow-primary text-decoration-none mb-3">Gamma-rays</a>
-                          <h3 class="h4">
-                            <a href="blog-single.html">The StarBurst Multimessenger Pioneer</a>
-                          </h3>
-                          <p class="mb-4">Nunc aliquet scelerisque pellentesque imperdiet tortor elit, dictum. Tristique odio at dignissim viverra aliquet eleifend erat. Tellus, at arcu, egestas praesent.</p>
-                          <div class="d-flex align-items-center">
-                            <a class="btn-link" href="#">Learn More</a>
-                          </div>
-                        </div>
-                      </div>
+            <div id="toolkits"></div>
+            <h2 class="h3 mt-5">Analysis Toolkits</h2>
+            <p class="mb-4 pb-2">Purus ornare nisl est nec. Nunc, enim tellus pretium viverra quisque id in metus volutpat. Urna eget velit venenatis, commodo eget massa. Magna donec dictum cras nullam platea. Diam rhoncus massa lectus pellentesque tristique. Amet commodo, egestas vitae bibendum. Volutpat elit condimentum integer tortor porttitor justo vel lobortis risus. Lacinia pellentesque fermentum tellus orci mauris, velit duis eget. Commodo justo, hac ligula molestie felis, iaculis. Vitae dui at ante orci, dictum fusce. Urna, sed urna fringilla faucibus euismod aliquet nec. Quis libero, fermentum amet eu, condimentum auctor. Sit vel ipsum sem tempus gravida et. Scelerisque blandit orci, est quis. Nisi, tellus amet est nascetur habitant faucibus ornare et vivamus.</p>
+
+            <!-- Item -->
+<!--             <div class="col py-4 my-2 my-sm-3">
+              <a href="services-single-v1.html" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 me-xl-2">
+                <div class="card-body pt-3">
+                  <div class="d-inline-block bg-primary shadow-primary rounded-3 position-absolute top-0 translate-middle-y p-3">
+                    <img src="assets/img/services/icons/cms.svg" class="d-block m-1" width="40" alt="Icon">
+                  </div>
+                  <h2 class="h4 d-inline-flex align-items-center">
+                    Custom Software Development
+                    <i class="bx bx-right-arrow-circle text-primary fs-3 ms-2"></i>
+                  </h2>
+                  <p class="fs-sm text-body mb-0">Nisi, dis sed cursus eget pellentesque mattis. Odio eu proin aliquam a. Semper bibendum tellus non tellus, facilisi dignissim in quam massa. Aliquam, feugiat ut cum tellus, sit. Quis consectetur gravida ac ac lectus cursus egestas.</p>
+                </div>
+              </a>
+            </div> -->
+
+            <!-- Item -->
+            <div class="card border-0 shadow-sm overflow-hidden mb-4">
+              <div class="row g-0">
+                <a href="#" class="col-sm-4 bg-repeat-0 bg-position-center bg-size-cover" style="background-image: url(assets/img/account/collection01.jpg); min-height: 13rem;"></a>
+                <div class="col-sm-8">
+                  <div class="card-body">
+                      <h2 class="h4 pb-1 mb-2">
+                      <a href="#">The Gamma-ray Data Tools</a>
+                    </h2>
+                    <p class="mb-4 mb-lg-5">NFT / Graphic Design / Motion Design</p>
+                    <div class="d-flex">
+                      <button type="button" class="btn btn-primary px-3 px-lg-4 me-3">
+                        <a>Learn More</a>
+                      </button>
+                      <button type="button" class="btn btn-outline-primary px-3 px-lg-4 me-3">
+                        <i class="bx bx-edit fs-xl me-xl-2"></i>
+                        <span class="d-none d-xl-inline">Contribute</span>
+                      </button>
                     </div>
-                  </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="card border-0 shadow-sm overflow-hidden mb-4">
+              <div class="row g-0">
+                <a href="#" class="col-sm-4 bg-repeat-0 bg-position-center bg-size-cover" style="background-image: url(assets/img/account/collection01.jpg); min-height: 13rem;"></a>
+                <div class="col-sm-8">
+                  <div class="card-body">
+                      <h2 class="h4 pb-1 mb-2">
+                      <a href="#">X-Spec</a>
+                    </h2>
+                    <p class="mb-4 mb-lg-5">NFT / Graphic Design / Motion Design</p>
+                    <div class="d-flex">
+                      <button type="button" class="btn btn-primary px-3 px-lg-4 me-3">
+                        <a>Learn More</a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pb-2 pb-lg-3"></div>
+
+            <div id="libraries"></div>
+            <h2 class="h3 mt-5">Libraries</h2>
+            <p class="mb-4 pb-2">Purus ornare nisl est nec. Nunc, enim tellus pretium viverra quisque id in metus volutpat. Urna eget velit venenatis, commodo eget massa. Magna donec dictum cras nullam platea. Diam rhoncus massa lectus pellentesque tristique. Amet commodo, egestas vitae bibendum. Volutpat elit condimentum integer tortor porttitor justo vel lobortis risus. Lacinia pellentesque fermentum tellus orci mauris, velit duis eget. Commodo justo, hac ligula molestie felis, iaculis. Vitae dui at ante orci, dictum fusce. Urna, sed urna fringilla faucibus euismod aliquet nec. Quis libero, fermentum amet eu, condimentum auctor. Sit vel ipsum sem tempus gravida et. Scelerisque blandit orci, est quis. Nisi, tellus amet est nascetur habitant faucibus ornare et vivamus.</p>
+
+            
+            <!-- Dark table with striped rows -->
+            <div class="table-responsive">
+              <table class="table table-dark table-striped">
+                <thead>
+                  <tr>
+                    <th>Conference</th>
+                    <th>Location</th>
+                    <th>Date</th>
+                    <th>Registration Deadline</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">massa</th>
+                    <td>tellus</td>
+                    <td>fermentum</td>
+                    <td>orci</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">egestas</th>
+                    <td>Urna</td>
+                    <td>sed</td>
+                    <td>gravida</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">ipsum</th>
+                    <td>dictum</td>
+                    <td>orci</td>
+                    <td>Sit</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="pb-2 pb-lg-3"></div>
+
+            <div id="resources"></div>
+            <h2 class="h3 mt-5">Resources</h2>
+            <p class="mb-4 pb-2">Purus ornare nisl est nec. Nunc, enim tellus pretium viverra quisque id in metus volutpat. Urna eget velit venenatis, commodo eget massa. Magna donec dictum cras nullam platea. Diam rhoncus massa lectus pellentesque tristique. Amet commodo, egestas vitae bibendum. Volutpat elit condimentum integer tortor porttitor justo vel lobortis risus. Lacinia pellentesque fermentum tellus orci mauris, velit duis eget. Commodo justo, hac ligula molestie felis, iaculis. Vitae dui at ante orci, dictum fusce. Urna, sed urna fringilla faucibus euismod aliquet nec. Quis libero, fermentum amet eu, condimentum auctor. Sit vel ipsum sem tempus gravida et. Scelerisque blandit orci, est quis. Nisi, tellus amet est nascetur habitant faucibus ornare et vivamus.</p>
+
+            
+            <!-- Dark table with striped rows -->
+            <div class="table-responsive">
+              <table class="table table-dark table-striped">
+                <thead>
+                  <tr>
+                    <th>Conference</th>
+                    <th>Location</th>
+                    <th>Date</th>
+                    <th>Registration Deadline</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">massa</th>
+                    <td>tellus</td>
+                    <td>fermentum</td>
+                    <td>orci</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">egestas</th>
+                    <td>Urna</td>
+                    <td>sed</td>
+                    <td>gravida</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">ipsum</th>
+                    <td>dictum</td>
+                    <td>orci</td>
+                    <td>Sit</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
 
 
           </div>
-          
+         
+
           <!-- <div class="col-lg-3 position-relative"> -->
           <div class="col-xl-3 col-lg-5 position-relative pt-5">
             <div class="sticky-top ms-xl-5 ms-lg-4 ps-xxl-4" style="top: 105px !important; margin-left: 0px !important;">
@@ -405,41 +470,35 @@
                 <div class="position-relative zindex-2">
                   <h3 class="h5 mb-4">Page Outline</h3>
                   <ul class="list-unstyled mb-3">
+                    
                     <li class="pb-1 mb-1">
                       <div class="mb-0">
-                        <a class="nav-link" href="#">Overview</a>
+                        <a class="nav-link" href="#featured">Featured Projects</a>
                       </div>
                     </li>
+
                     <li class="pb-1 mb-1">
                       <div class="mb-0">
-                        <a class="nav-link" href="#">Mission Timeline</a>
+                        <a class="nav-link" href="#toolkits">Analysis Toolkits</a>
                       </div>
                     </li>
-                    <li>
+
+                    <li class="pb-1 mb-1">
                       <div class="mb-0">
-                        <a class="nav-link" href="#">Mission Capabilities</a>
+                        <a class="nav-link" href="#resources">Resources</a>
                       </div>
                     </li>
+
+                    <li class="pb-1 mb-1">
+                      <div class="mb-0">
+                        <a class="nav-link" href="#libraries">Libraries</a>
+                      </div>
+                    </li>
+
                   </ul>
                 </div>
               </div>
 
-<!--               <div>
-                <h3 class="h5">Page Outline</h3>
-                <div class="mb-4 pb-lg-3">
-                  <ul class="nav flex-column fs-sm">
-                    <li class="nav-item mb-1">
-                      <a href="#" class="nav-link py-1 px-0">Overview</a>
-                    </li>
-                    <li class="nav-item mb-1">
-                      <a href="#" class="nav-link py-1 px-0">Timeline</a>
-                    </li>
-                    <li class="nav-item mb-1">
-                      <a href="#" class="nav-link py-1 px-0">Capabilities</a>
-                    </li>
-                  </ul>
-                <div>
-              </div> -->
 
               <div class="mt-4">
                 <h5 class="mb-4">Share this page:</h5>
@@ -460,41 +519,32 @@
               </div>
 
             </div>
-
-
-            <!-- List of blog categories -->
-<!--             <div class="col-lg-4 position-relative">
-              <div class="sticky-top ms-xl-5 ms-lg-4 ps-xxl-4" style="top: 105px !important;">
-                <h3 class="h6">Outline:</h3>
-                <ul class="nav flex-column fs-sm">
-                  <li class="nav-item mb-1">
-                    <a href="#" class="nav-link py-1 px-0">Overview</a>
-                  </li>
-                  <li class="nav-item mb-1">
-                    <a href="#" class="nav-link py-1 px-0">Timeline</a>
-                  </li>
-                  <li class="nav-item mb-1">
-                    <a href="#" class="nav-link py-1 px-0">Capabilities</a>
-                  </li>
-                </ul>
-              </div>
-            </div> -->
-
           </div>
-<!-- 
-          <div class="col-lg-3 position-relative">
+        </div>
+      </section>
 
-
-
-          <div> -->
-
-
+      <!-- Contact CTA -->
+      <section class="container mb-1 mb-md-3 mb-lg-4 pb-5">
+        <div class="bg-secondary rounded-3 overflow-hidden">
+          <div class="row align-items-center">
+            <div class="col-xl-4 col-md-5 offset-lg-1">
+              <div class="pt-5 pb-3 pb-md-5 px-4 px-lg-0 text-center text-md-start">
+                <p class="lead mb-3">Ready to contribute?</p>
+                <h2 class="h1 pb-3 pb-sm-4">Want to see <span class="text-primary">your</span> project listed here?</h2>
+                <a href="#" class="btn btn-primary btn-lg">Contact us!</a>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-7 offset-xl-1">
+              <div class="position-relative d-flex flex-column align-items-center justify-content-center h-100">
+                <svg class="d-none d-md-block position-absolute top-50 start-0 translate-middle-y" width="868" height="868" style="min-width: 868px;" viewBox="0 0 868 868" fill="none" xmlns="http://www.w3.org/2000/svg"><circle opacity="0.15" cx="434" cy="434" r="434" fill="#6366F1"/></svg>
+                <img src="assets/img/about/cta.png" class="position-relative zindex-3 mb-2 my-lg-4" width="382" alt="Illustration">
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
     </main>
-
-
 
     <!-- Footer -->
     <footer class="footer dark-mode bg-dark border-top border-light pt-5">
@@ -584,7 +634,7 @@
     <!-- Vendor Scripts -->
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-    <!-- <script src="assets/vendor/jarallax/dist/jarallax.min.js"></script> -->
+    <script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
     <script src="assets/vendor/lightgallery/lightgallery.min.js"></script>
     <script src="assets/vendor/lightgallery/plugins/zoom/lg-zoom.min.js"></script>
     <script src="assets/vendor/lightgallery/plugins/fullscreen/lg-fullscreen.min.js"></script>
