@@ -146,7 +146,6 @@
       </div>
     </div>
 
-
     <!-- Page wrapper for sticky footer -->
     <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
     <main class="page-wrapper">
@@ -155,7 +154,9 @@
       <header class="header navbar navbar-expand-lg bg-light navbar-sticky">
         <div class="container px-3">
           <a href="index.html" class="navbar-brand pe-3">
+            <!-- <img src="assets/img/logo.svg" width="47" alt="Silicon"> -->
             <img src="https://www1.grc.nasa.gov/wp-content/themes/nasapress/dist/images/logo-nasa.svg" width="75" alt="NASA logo">
+            <!-- <span class='navbar-title' >Multimessenger<br> Astrophysics</span> -->
             <p class='navbar-title mt-0 mb-0' style="line-height:25px">Multimessenger<br> Astrophysics</p>
           </a>
           <div id="navbarNav" class="offcanvas offcanvas-end">
@@ -177,43 +178,23 @@
                     <li><a href="missions.html#capabilities" class="dropdown-item">Capabilities</a></li>
                   </ul>
                 </li>
-                <li class="nav-item">
-                  <a href="tools.html" class="nav-link">Tools</a>
-                </li>
-                <!-- <li class="nav-item dropdown">
-                  <a href="tools.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Tools</a>
-                  <div class="dropdown-menu">
-                    <div class="d-lg-flex pt-lg-3">
-                      <div class="mega-dropdown-column">
-                        <h6 class="px-3 mb-2">Analysis Software</h6>
-                        <ul class="list-unstyled mb-3">
-                          <li><a href="about-v1.html" class="dropdown-item py-1">Gamma-ray Data Tools</a></li>
-                          <li><a href="about-v2.html" class="dropdown-item py-1">X-Spec</a></li>
-                        </ul>
-                        <h6 class="px-3 mb-2">Libraries</h6>
-                        <ul class="list-unstyled mb-3">
-                          <li><a href="blog-list-with-sidebar.html" class="dropdown-item py-1">astropy</a></li>
-                          <li><a href="blog-grid-with-sidebar.html" class="dropdown-item py-1">scipy</a></li>
-                        </ul>
-                      </div>
-                      <div class="mega-dropdown-column">
-                        <h6 class="px-3 mb-2">Resources</h6>
-                        <ul class="list-unstyled mb-3">
-                          <li><a href="#" class="dropdown-item py-1">Stuff</a></li>
-                          <li><a href="#" class="dropdown-item py-1">Other Stuff</a></li>
-                          <li><a href="#" class="dropdown-item py-1">More Stuff</a></li>
-                        </ul>
-                      </div>
-
-                    </div>
-                  </div>
-                </li> -->
-
-                <li class="nav-item">
-                  <a href="https://gcn.nasa.gov" class="nav-link">Archives</a>
-                </li>                
-                <li class="nav-item">
-                  <a href="proposals.html" class="nav-link">Proposals</a>
+                <li class="nav-item dropdown">
+                  <a href="missions.html" class="nav-link dropdown-toggle" aria-current="page">Tools</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="missions.html#reporting" class="dropdown-item">Rapid Reporting Resources</a></li>
+                    <li><a href="missions.html#analysis" class="dropdown-item">Data Analysis Toolkits</a></li>
+                    <li><a href="missions.html#planning" class="dropdown-item">Observations Planning Tools</a></li>
+                    <li><a href="missions.html#archives" class="dropdown-item">Data Archives & Repositories</a></li>
+                  </ul>
+                </li>              
+                <li class="nav-item dropdown">
+                  <a href="missions.html" class="nav-link dropdown-toggle" aria-current="page">Proposals</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="missions.html#proposals" class="dropdown-item">Proposal Opportunities</a></li>
+                    <li><a href="missions.html#programs" class="dropdown-item">Guest Observer & Investigator Programs</a></li>
+                    <li><a href="missions.html#joint" class="dropdown-item">Joint Observing Opportunities</a></li>
+                    <li><a href="missions.html#nonnasa" class="dropdown-item">Complementary Opportunities</a></li>
+                  </ul>
                 </li>
                 <li class="nav-item dropdown">
                   <a href="conferences.html" class="nav-link dropdown-toggle" aria-current="page">Conferences</a>
@@ -238,14 +219,15 @@
       </div>
 
       <!-- Breadcrumb -->
-<!--       <nav class="container py-4 mb-2 my-lg-3" aria-label="breadcrumb">
-        <ol class="breadcrumb mb-0">
+
+      <nav class="container py-4 mb-2 my-lg-3" aria-label="breadcrumb">
+        <!-- <ol class="breadcrumb mb-0">
           <li class="breadcrumb-item">
             <a href="index.html"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
           </li>
           <li class="breadcrumb-item active" aria-current="page">Multimessenger Missions</li>
-        </ol>
-      </nav> -->
+        </ol> -->
+      </nav>
 
       <!-- Content -->
       <section class="container pb-5 mb-md-2 mb-lg-4">
@@ -382,7 +364,7 @@
                     <h3 class="h4">
                       <a href="blog-single.html">The Fermi Gamma-ray Space Telescope</a>
                     </h3>
-                    <p class="mb-4">Nunc aliquet scelerisque pellentesque imperdiet tortor elit, dictum. Tristique odio at dignissim viverra aliquet eleifend erat. Tellus, at arcu, egestas praesent.</p>
+                    <p class="mb-4">Fermi provides an unprecedented energy coverage of the gamma-ray spectrum.  Its two instruments collective cover an energy range from 8 keV to over 200 GeV, with an extremely large field of view, making it indispensable as a gamma-ray monitor.</p>
                     <div class="d-flex align-items-center text-muted">
                       <div class="d-flex flex-column flex-sm-row">
                         <a href="#" class="btn btn-outline-primary btn-md mb-3 mb-sm-0 me-sm-3">
@@ -415,7 +397,7 @@
                     <h3 class="h4">
                       <a href="blog-single.html">The Neil Gehrels Swift Observatory</a>
                     </h3>
-                    <p class="mb-4">Nunc aliquet scelerisque pellentesque imperdiet tortor elit, dictum. Tristique odio at dignissim viverra aliquet eleifend erat. Tellus, at arcu, egestas praesent.</p>
+                    <p class="mb-4">Swift is a multi-wavelength space observatory and has long been a workhorse for time-domain and multimessenger astronomy. Its three instruments work together to observe GRBs and their afterglows in the gamma-ray, X-ray, ultraviolet, and optical wavebands.</p>
                     <div class="d-flex align-items-center text-muted">
                       <div class="d-flex flex-column flex-sm-row">
                         <a href="#" class="btn btn-outline-primary btn-md mb-3 mb-sm-0 me-sm-3">
@@ -447,7 +429,7 @@
                     <h3 class="h4">
                       <a href="https://hubblesite.org">The Hubble Space Telescope (HST)</a>
                     </h3>
-                    <p class="mb-4">Nunc aliquet scelerisque pellentesque imperdiet tortor elit, dictum. Tristique odio at dignissim viverra aliquet eleifend erat. Tellus, at arcu, egestas praesent.</p>
+                    <p class="mb-4">HST is one of the most versatile space telescopes in operation and has become a vital research tool for multimessenger astronomy. HST features a 2.4m mirror, and its five main instruments observe in the ultraviolet, visible, and near-infrared regions of the electromagnetic spectrum.</p>
                     <div class="d-flex align-items-center text-muted">
                       <div class="d-flex flex-column flex-sm-row">
                         <a href="https://www.stsci.edu" class="btn btn-outline-primary btn-md mb-3 mb-sm-0 me-sm-3">
@@ -459,6 +441,7 @@
                           Data Archive
                         </a>
                       </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -474,11 +457,20 @@
                   <div class="card-body px-0 pt-sm-0 ps-sm-4 pb-0 pb-sm-4">
                     <a href="#" class="badge fs-sm text-white bg-danger shadow-danger text-decoration-none mb-3">X-rays</a>
                     <h3 class="h4">
-                      <a href="blog-single.html">Chandra X-ray Observatory</a>
+                      <a href="https://chandra.harvard.edu">Chandra X-ray Observatory</a>
                     </h3>
-                    <p class="mb-4">Nunc aliquet scelerisque pellentesque imperdiet tortor elit, dictum. Tristique odio at dignissim viverra aliquet eleifend erat. Tellus, at arcu, egestas praesent.</p>
-                    <div class="d-flex align-items-left">
-                      <a class="btn-link" href="#">Learn More</a>
+                    <p class="mb-4">Chandra is one of the most versatile X-ray telescopes in orbit, providing sensative X-ray coverage from 0.1 to 10 keV with at a resolution of 0.5 arcsec, coupled wtih a robust target of opportunity program.</p>
+                    <div class="d-flex align-items-center text-muted">
+                      <div class="d-flex flex-column flex-sm-row">
+                        <a href="https://cxc.harvard.edu/index.html" class="btn btn-outline-primary btn-md mb-3 mb-sm-0 me-sm-3">
+                          <i class="bx bx-planet fs-xl me-xl-2"></i>
+                          Science Support Center
+                        </a>
+                        <a href="https://cxc.harvard.edu/cda/" class="btn btn-outline-primary  btn-md">
+                          <i class="bx bx-data fs-xl me-xl-2"></i>
+                          Data Archive
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -495,11 +487,20 @@
                   <div class="card-body px-0 pt-sm-0 ps-sm-4 pb-0 pb-sm-4">
                     <a href="#" class="badge fs-sm text-white bg-danger shadow-danger text-decoration-none mb-3">X-rays</a>
                     <h3 class="h4">
-                      <a href="blog-single.html">XMM-Newton</a>
+                      <a href="https://www.cosmos.esa.int/web/xmm-newton">XMM-Newton</a>
                     </h3>
-                    <p class="mb-4">Nunc aliquet scelerisque pellentesque imperdiet tortor elit, dictum. Tristique odio at dignissim viverra aliquet eleifend erat. Tellus, at arcu, egestas praesent.</p>
-                    <div class="d-flex align-items-left">
-                      <a class="btn-link" href="#">Learn More</a>
+                    <p class="mb-4">XMM-Newton is an X-ray observatory that consists of 3 high throughput X-ray telescopes with an unprecedented effective area, and an optical monitor. The large collecting area and ability to make long uninterrupted exposures provide highly sensitive observations.</p>
+                    <div class="d-flex align-items-center text-muted">
+                      <div class="d-flex flex-column flex-sm-row">
+                        <a href="https://cxc.harvard.edu/index.html" class="btn btn-outline-primary btn-md mb-3 mb-sm-0 me-sm-3">
+                          <i class="bx bx-planet fs-xl me-xl-2"></i>
+                          Science Support Center
+                        </a>
+                        <a href="https://cxc.harvard.edu/cda/" class="btn btn-outline-primary  btn-md">
+                          <i class="bx bx-data fs-xl me-xl-2"></i>
+                          Data Archive
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -516,11 +517,20 @@
                   <div class="card-body px-0 pt-sm-0 ps-sm-4 pb-0 pb-sm-4">
                     <a href="#" class="badge fs-sm text-white bg-danger shadow-danger text-decoration-none mb-3">X-rays</a>
                     <h3 class="h4">
-                      <a href="blog-single.html">NuStar</a>
+                      <a href="https://www.nustar.caltech.edu">NuStar</a>
                     </h3>
-                    <p class="mb-4">Nunc aliquet scelerisque pellentesque imperdiet tortor elit, dictum. Tristique odio at dignissim viverra aliquet eleifend erat. Tellus, at arcu, egestas praesent.</p>
-                    <div class="d-flex align-items-left">
-                      <a class="btn-link" href="#">Learn More</a>
+                    <p class="mb-4">NuStar is a direct-imaging X-ray telescope with energies beyond those of the Chandra X-ray Observatory and XMM-Newton, covering an energy range of 3–79 keV at a resolution of 9.5 arcsec.</p>
+                    <div class="d-flex align-items-center text-muted">
+                      <div class="d-flex flex-column flex-sm-row">
+                        <a href="https://heasarc.gsfc.nasa.gov/docs/nustar/" class="btn btn-outline-primary btn-md mb-3 mb-sm-0 me-sm-3">
+                          <i class="bx bx-planet fs-xl me-xl-2"></i>
+                          Science Support Center
+                        </a>
+                        <a href="https://heasarc.gsfc.nasa.gov/docs/nustar/archive/nustar_archive.html" class="btn btn-outline-primary  btn-md">
+                          <i class="bx bx-data fs-xl me-xl-2"></i>
+                          Data Archive
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -537,11 +547,20 @@
                   <div class="card-body px-0 pt-sm-0 ps-sm-4 pb-0 pb-sm-4">
                     <a href="#" class="badge fs-sm text-white bg-danger shadow-danger text-decoration-none mb-3">X-rays</a>
                     <h3 class="h4">
-                      <a href="blog-single.html">NICER</a>
+                      <a href="https://www.nasa.gov/nicer">NICER</a>
                     </h3>
-                    <p class="mb-4">Nunc aliquet scelerisque pellentesque imperdiet tortor elit, dictum. Tristique odio at dignissim viverra aliquet eleifend erat. Tellus, at arcu, egestas praesent.</p>
-                    <div class="d-flex align-items-left">
-                      <a class="btn-link" href="#">Learn More</a>
+                    <p class="mb-4">Nicer is a soft X-ray telescope that is capable of providing precise time of arrival information for each photon detected by its array of 56 X-ray Timing Instruments between 0.2 to 12 keV.</p>
+                    <div class="d-flex align-items-center text-muted">
+                      <div class="d-flex flex-column flex-sm-row">
+                        <a href="https://heasarc.gsfc.nasa.gov/docs/nicer/" class="btn btn-outline-primary btn-md mb-3 mb-sm-0 me-sm-3">
+                          <i class="bx bx-planet fs-xl me-xl-2"></i>
+                          Science Support Center
+                        </a>
+                        <a href="https://heasarc.gsfc.nasa.gov/docs/nicer/nicer_archive.html" class="btn btn-outline-primary  btn-md">
+                          <i class="bx bx-data fs-xl me-xl-2"></i>
+                          Data Archive
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -558,11 +577,20 @@
                   <div class="card-body px-0 pt-sm-0 ps-sm-4 pb-0 pb-sm-4">
                     <a href="#" class="badge fs-sm text-white bg-danger shadow-danger text-decoration-none mb-3">X-rays</a>
                     <h3 class="h4">
-                      <a href="blog-single.html">IXPE</a>
+                      <a href="https://ixpe.msfc.nasa.gov">IXPE</a>
                     </h3>
-                    <p class="mb-4">Nunc aliquet scelerisque pellentesque imperdiet tortor elit, dictum. Tristique odio at dignissim viverra aliquet eleifend erat. Tellus, at arcu, egestas praesent.</p>
-                    <div class="d-flex align-items-left">
-                      <a class="btn-link" href="#">Learn More</a>
+                    <p class="mb-4">IXPE exploits the polarization state of light from  sources to provide insight into our understanding of X-ray production in objects such as neutron stars and pulsar wind nebulae</p>
+                    <div class="d-flex align-items-center text-muted">
+                      <div class="d-flex flex-column flex-sm-row">
+                        <a href="https://ixpe.msfc.nasa.gov/for_scientists/index.html" class="btn btn-outline-primary btn-md mb-3 mb-sm-0 me-sm-3">
+                          <i class="bx bx-planet fs-xl me-xl-2"></i>
+                          Science Support Center
+                        </a>
+                        <a href="https://heasarc.gsfc.nasa.gov/docs/ixpe/" class="btn btn-outline-primary  btn-md">
+                          <i class="bx bx-data fs-xl me-xl-2"></i>
+                          Data Archive
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -579,11 +607,20 @@
                   <div class="card-body px-0 pt-sm-0 ps-sm-4 pb-0 pb-sm-4">
                     <a href="#" class="badge fs-sm text-white bg-success shadow-success text-decoration-none mb-3">Optical</a>
                     <h3 class="h4">
-                      <a href="blog-single.html">TESS</a>
+                      <a href="blog-single.html">The Transiting Exoplanet Survey Satellite (TESS)</a>
                     </h3>
-                    <p class="mb-4">Nunc aliquet scelerisque pellentesque imperdiet tortor elit, dictum. Tristique odio at dignissim viverra aliquet eleifend erat. Tellus, at arcu, egestas praesent.</p>
-                    <div class="d-flex align-items-left">
-                      <a class="btn-link" href="#">Learn More</a>
+                    <p class="mb-4">TESS is designed to discover thousands of exoplanets in orbit around the brightest dwarf stars in the sky. The survey strategy of the night sky employed by TESS makes it sensstive to a number of time-domain transient sources.</p>
+                    <div class="d-flex align-items-center text-muted">
+                      <div class="d-flex flex-column flex-sm-row">
+                        <a href="https://heasarc.gsfc.nasa.gov/docs/tess/" class="btn btn-outline-primary btn-md mb-3 mb-sm-0 me-sm-3">
+                          <i class="bx bx-planet fs-xl me-xl-2"></i>
+                          Science Support Center
+                        </a>
+                        <a href="https://archive.stsci.edu/missions-and-data/tess" class="btn btn-outline-primary  btn-md">
+                          <i class="bx bx-data fs-xl me-xl-2"></i>
+                          Data Archive
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -605,12 +642,9 @@
                   <div class="card-body px-0 pt-sm-0 ps-sm-4 pb-0 pb-sm-4">
                     <a href="#" class="badge fs-sm text-white bg-primary shadow-primary text-decoration-none mb-3">Gamma-rays</a>
                     <h3 class="h4">
-                      <a href="blog-single.html">BurstCube</a>
+                      <a href="https://asd.gsfc.nasa.gov/burstcube/">BurstCube</a>
                     </h3>
-                    <p class="mb-4">Nunc aliquet scelerisque pellentesque imperdiet tortor elit, dictum. Tristique odio at dignissim viverra aliquet eleifend erat. Tellus, at arcu, egestas praesent.</p>
-                    <div class="d-flex align-items-center">
-                      <a class="btn-link" href="#">Learn More</a>
-                    </div>
+                    <p class="mb-4">BurstCube is a wide-field gamma-ray monitor designed to fit in a cubeSat profile to detect gamma-ray bursts and will test new gamma-ray detector technology.</p>
                   </div>
                 </div>
               </div>
@@ -627,12 +661,9 @@
                   <div class="card-body px-0 pt-sm-0 ps-sm-4 pb-0 pb-sm-4">
                     <a href="#" class="badge fs-sm text-white bg-primary shadow-primary text-decoration-none mb-3">Gamma-rays</a>
                     <h3 class="h4">
-                      <a href="blog-single.html">Glowbug</a>
+                      <a href="https://pcos.gsfc.nasa.gov/physpag/meetings/head2019/grsig/EricGrove-Glowbug-HEAD2019_V2.pdf">Glowbug</a>
                     </h3>
-                    <p class="mb-4">Nunc aliquet scelerisque pellentesque imperdiet tortor elit, dictum. Tristique odio at dignissim viverra aliquet eleifend erat. Tellus, at arcu, egestas praesent.</p>
-                    <div class="d-flex align-items-center">
-                      <a class="btn-link" href="#">Learn More</a>
-                    </div>
+                    <p class="mb-4">Glowbug is a wide-field gamma-ray monitor to be launched to the ISS to detect gamma-ray bursts and will test new gamma-ray detector technology.</p>
                   </div>
                 </div>
               </div>
@@ -649,12 +680,9 @@
                   <div class="card-body px-0 pt-sm-0 ps-sm-4 pb-0 pb-sm-4">
                     <a href="#" class="badge fs-sm text-white bg-primary shadow-primary text-decoration-none mb-3">Gamma-rays</a>
                     <h3 class="h4">
-                      <a href="blog-single.html">The StarBurst Multimessenger Pioneer</a>
+                      <a href="https://science.nasa.gov/astrophysics/programs/astrophysics-pioneers">The StarBurst Multimessenger Pioneer</a>
                     </h3>
-                    <p class="mb-4">Nunc aliquet scelerisque pellentesque imperdiet tortor elit, dictum. Tristique odio at dignissim viverra aliquet eleifend erat. Tellus, at arcu, egestas praesent.</p>
-                    <div class="d-flex align-items-center">
-                      <a class="btn-link" href="#">Learn More</a>
-                    </div>
+                    <p class="mb-4">StarBurst is a wide-field gamma-ray monitor designed to detect the electromagnetic counterpart to neutron star mergers.</p>
                   </div>
                 </div>
               </div>
@@ -671,12 +699,9 @@
                   <div class="card-body px-0 pt-sm-0 ps-sm-4 pb-0 pb-sm-4">
                     <a href="#" class="badge fs-sm text-white bg-danger shadow-danger text-decoration-none mb-3">X-ray</a>
                     <h3 class="h4">
-                      <a href="blog-single.html">BlackCat</a>
+                      <a href="https://www.psu.edu/news/research/story/penn-state-astrophysicist-lead-58-million-nasa-cubesat-mission/">BlackCat</a>
                     </h3>
                     <p class="mb-4">Nunc aliquet scelerisque pellentesque imperdiet tortor elit, dictum. Tristique odio at dignissim viverra aliquet eleifend erat. Tellus, at arcu, egestas praesent.</p>
-                    <div class="d-flex align-items-center">
-                      <a class="btn-link" href="#">Learn More</a>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -695,18 +720,8 @@
                     <h3 class="h4">
                       <a href="https://cosi.ssl.berkeley.edu">The Compton Spectrometer and Imager (COSI)</a>
                     </h3>
-                    <p class="mb-4">Nunc aliquet scelerisque pellentesque imperdiet tortor elit, dictum. Tristique odio at dignissim viverra aliquet eleifend erat. Tellus, at arcu, egestas praesent.</p>
+                    <p class="mb-4">COSI is a soft gamma-ray survey telescope (0.2-5 MeV) designed to probe the origins of Galactic positrons, uncover the sites of nucleosynthesis in the Galaxy, perform pioneering studies of gamma-ray polarization, and find counterparts to multi-messenger sources.</p>
                     <div class="d-flex align-items-center text-muted">
-                      <div class="d-flex flex-column flex-sm-row">
-                        <!-- <a href="https://cosi.ssl.berkeley.edu" class="btn btn-outline-primary btn-md mb-3 mb-sm-0 me-sm-3">
-                          <i class="bx bx-planet fs-xl me-xl-2"></i>
-                          Mission Page
-                        </a> -->
-                        <!-- <a href="#" class="btn btn-outline-primary  btn-md">
-                          <i class="bx bx-data fs-xl me-xl-2"></i>
-                          Data Archive
-                        </a> -->
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -778,10 +793,9 @@
           </div>
 
         </div>
-
       </section>
 
-      <!-- Contact CTA -->
+      <!-- Contact -->
       <section class="container pt-3 pb-4 pb-md-5 pb-5" style="margin-top: -156px; margin-bottom: 220px; transform: translateY(156px);">
         <div class="card border-0 bg-gradient-primary">
           <div class="card-body p-md-5 p-4 bg-size-cover" style="background-image: url(assets/img/landing/digital-agency/contact-bg.png);">
@@ -796,10 +810,7 @@
         </div>
       </section>
 
-
     </main>
-
-
 
     <!-- Footer -->
     <footer class="footer dark-mode bg-dark border-top border-light pt-5">
@@ -813,22 +824,25 @@
             <!-- <h6 class='mt-0 mb-0' style="line-height:25px">National Aeronautics<br> and Space Administration</h6> -->
             </div>
             <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
-                  <ul class="nav flex-column pb-lg-1 mb-lg-0 mt-3">
-                    <li><span class="h6">NASA Official: </span> Daniel Kocevski</li>
-                    <li><span class="h6">Page Editor: </span> Daniel Kocevski</li>
-                    <li><span class="h6">Page Last Updated: </span> July 13th, 2022</li>
-                  </ul>
+              <ul class="nav flex-column pb-lg-1 mb-lg-0 mt-3">
+                <li><span class="h6">NASA Official: </span> Daniel Kocevski</li>
+                <li><span class="h6">Page Editor: </span> Daniel Kocevski</li>
+                <li><span class="h6">Page Last Updated: </span> July 13th, 2022</li>
+              </ul>
+             <!--  <div class="form-check form-switch mode-switch pt-1" data-bs-toggle="mode">
+                <input type="checkbox" class="form-check-input" id="theme-mode">
+                <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
+                <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
+              </div> -->
             </div>
-
             <p class="pt-5">
-                <a href="https://www.nasa.gov/about/highlights/HP_Privacy.html">Privacy Policy</a>
-                 &nbsp;| &nbsp;
-                <a href="http://odeo.hq.nasa.gov/nofear.html">No Fear Act</a>
-                 &nbsp;| &nbsp;
-                <a href="https://www.nasa.gov/FOIA/index.html">FOIA</a>
-                 &nbsp;| &nbsp;
-                <a href="https://www.nasa.gov/about/highlights/HP_Privacy.html">Contact Us</a>
-
+              <a href="https://www.nasa.gov/about/highlights/HP_Privacy.html">Privacy Policy</a>
+               &nbsp;| &nbsp;
+              <a href="http://odeo.hq.nasa.gov/nofear.html">No Fear Act</a>
+               &nbsp;| &nbsp;
+              <a href="https://www.nasa.gov/FOIA/index.html">FOIA</a>
+               &nbsp;| &nbsp;
+              <a href="https://www.nasa.gov/about/highlights/HP_Privacy.html">Contact Us</a>
             </p>
           </div>
 
@@ -848,26 +862,24 @@
               </div>
 
               <!-- MOSSAIC Column -->
-              <div class="col-lg-4 col-lg-5 mt-4 pt-0 pt-lg-0 text-end">
-                <h4 class="mt-2 mb-2">MOSSAIC</h4>
+              <div class="col-lg-4 col-lg-5 mt-5 pt-5 pt-lg-0 text-end">
+                <h5 class="mb-0 mt-4"><a class="nav nav-link d-inline-block px-0 pt-0 pb-0" href="about.html">MOSSAIC</a></h5>
                 <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
-                      <ul class="nav flex-column pb-lg-1 mb-lg-0 mt-3">
-                        <li><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-0">Goddard Space Flight Center</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-0 pb-0">Marshall Space Flight Center</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-0 pb-0">multimessenger.nasa.gov</a></li>
+                      <ul class="nav flex-column pb-lg-1 mb-lg-0 mt-0">
+                        <li class="nav-item"><a href="index.html" class="nav-link d-inline-block px-0 pt-0 pb-0 mt-1">Multimessenger.nasa.gov</a></li>
+                        <li><a href="http://gsfc.nasa.gov" class="nav-link d-inline-block px-0 pt-0 pb-0">Goddard Space Flight Center</a></li>
+                        <li class="nav-item"><a href="http://mfsc.nasa.gov" class="nav-link d-inline-block px-0 pt-0 pb-0">Marshall Space Flight Center</a></li>
                       </ul>
                 </div>
-                <div class="mb-4 pb-lg-3 mt-4">
-                  <a href="#" class="btn btn-icon btn-secondary btn-facebook me-2 mb-2">
-                    <i class="bx bxl-facebook"></i>
-                  </a>
-                  <a href="#" class="btn btn-icon btn-secondary btn-twitter me-2 mb-2">
-                    <i class="bx bxl-twitter"></i>
-                  </a>
-                  <a href="#" class="btn btn-icon btn-secondary btn-instagram me-2 mb-2">
-                    <i class="bx bxl-instagram"></i>
-                  </a>
+
+                <div class="mb-4 pb-lg-3 mt-4 float-end">
+                  <div class="form-check form-switch mode-switch pt-1" data-bs-toggle="mode">
+                    <input type="checkbox" class="form-check-input" id="theme-mode">
+                    <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
+                    <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
+                  </div>
                 </div>
+
               </div>
             </div>
 

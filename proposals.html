@@ -155,7 +155,9 @@
       <header class="header navbar navbar-expand-lg bg-light navbar-sticky">
         <div class="container px-3">
           <a href="index.html" class="navbar-brand pe-3">
+            <!-- <img src="assets/img/logo.svg" width="47" alt="Silicon"> -->
             <img src="https://www1.grc.nasa.gov/wp-content/themes/nasapress/dist/images/logo-nasa.svg" width="75" alt="NASA logo">
+            <!-- <span class='navbar-title' >Multimessenger<br> Astrophysics</span> -->
             <p class='navbar-title mt-0 mb-0' style="line-height:25px">Multimessenger<br> Astrophysics</p>
           </a>
           <div id="navbarNav" class="offcanvas offcanvas-end">
@@ -177,43 +179,23 @@
                     <li><a href="missions.html#capabilities" class="dropdown-item">Capabilities</a></li>
                   </ul>
                 </li>
-                <li class="nav-item">
-                  <a href="tools.html" class="nav-link">Tools</a>
-                </li>
-                <!-- <li class="nav-item dropdown">
-                  <a href="tools.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Tools</a>
-                  <div class="dropdown-menu">
-                    <div class="d-lg-flex pt-lg-3">
-                      <div class="mega-dropdown-column">
-                        <h6 class="px-3 mb-2">Analysis Software</h6>
-                        <ul class="list-unstyled mb-3">
-                          <li><a href="about-v1.html" class="dropdown-item py-1">Gamma-ray Data Tools</a></li>
-                          <li><a href="about-v2.html" class="dropdown-item py-1">X-Spec</a></li>
-                        </ul>
-                        <h6 class="px-3 mb-2">Libraries</h6>
-                        <ul class="list-unstyled mb-3">
-                          <li><a href="blog-list-with-sidebar.html" class="dropdown-item py-1">astropy</a></li>
-                          <li><a href="blog-grid-with-sidebar.html" class="dropdown-item py-1">scipy</a></li>
-                        </ul>
-                      </div>
-                      <div class="mega-dropdown-column">
-                        <h6 class="px-3 mb-2">Resources</h6>
-                        <ul class="list-unstyled mb-3">
-                          <li><a href="#" class="dropdown-item py-1">Stuff</a></li>
-                          <li><a href="#" class="dropdown-item py-1">Other Stuff</a></li>
-                          <li><a href="#" class="dropdown-item py-1">More Stuff</a></li>
-                        </ul>
-                      </div>
-
-                    </div>
-                  </div>
-                </li> -->
-
-                <li class="nav-item">
-                  <a href="https://gcn.nasa.gov" class="nav-link">Archives</a>
-                </li>                
-                <li class="nav-item">
-                  <a href="proposals.html" class="nav-link">Proposals</a>
+                <li class="nav-item dropdown">
+                  <a href="missions.html" class="nav-link dropdown-toggle" aria-current="page">Tools</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="missions.html#reporting" class="dropdown-item">Rapid Reporting Resources</a></li>
+                    <li><a href="missions.html#analysis" class="dropdown-item">Data Analysis Toolkits</a></li>
+                    <li><a href="missions.html#planning" class="dropdown-item">Observations Planning Tools</a></li>
+                    <li><a href="missions.html#archives" class="dropdown-item">Data Archives & Repositories</a></li>
+                  </ul>
+                </li>              
+                <li class="nav-item dropdown">
+                  <a href="missions.html" class="nav-link dropdown-toggle" aria-current="page">Proposals</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="missions.html#proposals" class="dropdown-item">Proposal Opportunities</a></li>
+                    <li><a href="missions.html#programs" class="dropdown-item">Guest Observer & Investigator Programs</a></li>
+                    <li><a href="missions.html#joint" class="dropdown-item">Joint Observing Opportunities</a></li>
+                    <li><a href="missions.html#nonnasa" class="dropdown-item">Complementary Opportunities</a></li>
+                  </ul>
                 </li>
                 <li class="nav-item dropdown">
                   <a href="conferences.html" class="nav-link dropdown-toggle" aria-current="page">Conferences</a>
@@ -303,6 +285,7 @@
                   </div>
                 </div>
               </div>
+              
             </div>
 
             <div id="gops"></div>
@@ -356,6 +339,7 @@
                   </div>
                 </div>
               </div>
+
             </div>
 
 
@@ -602,134 +586,129 @@
                   </div>
                 </div>
               </div>
-
             </div>
 
-           <h2 class="h5 pt-3">Observatories with Open Observing Time for US Scientists</h2>
+          <h2 class="h5 pt-3">Observatories with Open Observing Time for US Scientists</h2>
 
-            <div class="row row-cols-1 row-cols-md-3 g-4 pt-2 pt-md-4 pb-lg-2 mb-5">
+          <div class="row row-cols-1 row-cols-md-3 g-4 pt-2 pt-md-4 pb-lg-2 mb-5">
 
-              <!-- Item -->
-              <div class="col">
-                <div class="card bg-secondary border-0 flex-column flex-sm-row flex-md-column flex-xxl-row align-items-top card-hover border-primary h-100 ">
-                  <!-- <img src="assets/img/landing/medical/icons/doctor.svg" width="168" alt="Doctor icon"> -->
-                  <div class="card-body text-center text-sm-start text-md-center text-xxl-start pb-3 pb-sm-2 pb-md-3 pb-xxl-2 text-align-top">
-                    <h3 class="h6 mb-2 mt-n4 mt-sm-0 mt-md-n4 mt-xxl-0">National Optical-Infrared Astronomy Research Laboratory (NOIRLab)</h3>
-                    <p class="fs-sm mb-1">Two annual deadlines on March 31st and September 30th. Includes Gemini Observatory, Cerro Tololo Inter-American Observatory (CTIO), Kitt Peak National Observatory (KPNO), WIYN Community-access time.</p>
-                    <a href="#" class="btn btn-link stretched-link px-0">
-                      Learn More
-                      <i class="bx bx-right-arrow-alt fs-xl ms-1"></i>
-                    </a>
-                  </div>
+            <!-- Item -->
+            <div class="col">
+              <div class="card bg-secondary border-0 flex-column flex-sm-row flex-md-column flex-xxl-row align-items-top card-hover border-primary h-100 ">
+                <!-- <img src="assets/img/landing/medical/icons/doctor.svg" width="168" alt="Doctor icon"> -->
+                <div class="card-body text-center text-sm-start text-md-center text-xxl-start pb-3 pb-sm-2 pb-md-3 pb-xxl-2 text-align-top">
+                  <h3 class="h6 mb-2 mt-n4 mt-sm-0 mt-md-n4 mt-xxl-0">National Optical-Infrared Astronomy Research Laboratory (NOIRLab)</h3>
+                  <p class="fs-sm mb-1">Two annual deadlines on March 31st and September 30th. Includes Gemini Observatory, Cerro Tololo Inter-American Observatory (CTIO), Kitt Peak National Observatory (KPNO), WIYN Community-access time.</p>
+                  <a href="#" class="btn btn-link stretched-link px-0">
+                    Learn More
+                    <i class="bx bx-right-arrow-alt fs-xl ms-1"></i>
+                  </a>
                 </div>
               </div>
+            </div>
 
-              <!-- Item -->
-              <div class="col">
-                <div class="card bg-secondary border-0 flex-column flex-sm-row flex-md-column flex-xxl-row align-items-top card-hover border-primary h-100 ">
-                  <!-- <img src="assets/img/landing/medical/icons/doctor.svg" width="168" alt="Doctor icon"> -->
-                  <div class="card-body text-center text-sm-start text-md-center text-xxl-start pb-3 pb-sm-2 pb-md-3 pb-xxl-2">
-                    <h3 class="h6 mb-2 mt-n4 mt-sm-0 mt-md-n4 mt-xxl-0">Atacama Large Millimeter/submillimeter Array (ALMA)</h3>
-                    <p class="fs-sm mb-1">Annual deadline in April.</p>
-                    <a href="#" class="btn btn-link stretched-link px-0">
-                      Learn More
-                      <i class="bx bx-right-arrow-alt fs-xl ms-1"></i>
-                    </a>
-                  </div>
+            <!-- Item -->
+            <div class="col">
+              <div class="card bg-secondary border-0 flex-column flex-sm-row flex-md-column flex-xxl-row align-items-top card-hover border-primary h-100 ">
+                <!-- <img src="assets/img/landing/medical/icons/doctor.svg" width="168" alt="Doctor icon"> -->
+                <div class="card-body text-center text-sm-start text-md-center text-xxl-start pb-3 pb-sm-2 pb-md-3 pb-xxl-2">
+                  <h3 class="h6 mb-2 mt-n4 mt-sm-0 mt-md-n4 mt-xxl-0">Atacama Large Millimeter/submillimeter Array (ALMA)</h3>
+                  <p class="fs-sm mb-1">Annual deadline in April.</p>
+                  <a href="#" class="btn btn-link stretched-link px-0">
+                    Learn More
+                    <i class="bx bx-right-arrow-alt fs-xl ms-1"></i>
+                  </a>
                 </div>
               </div>
+            </div>
 
-              <!-- Item -->
-              <div class="col">
-                <div class="card bg-secondary border-0 flex-column flex-sm-row flex-md-column flex-xxl-row align-items-top card-hover border-primary h-100 ">
-                  <!-- <img src="assets/img/landing/medical/icons/doctor.svg" width="168" alt="Doctor icon"> -->
-                  <div class="card-body text-center text-sm-start text-md-center text-xxl-start pb-3 pb-sm-2 pb-md-3 pb-xxl-2">
-                    <h3 class="h6 mb-2 mt-n4 mt-sm-0 mt-md-n4 mt-xxl-0">National Radio Astronomy Observatory (NRAO)</h3>
-                    <p class="fs-sm mb-1">Two annual deadlines on February 1st and August 1st. Includes the Very Large Array (VLA) and Very Long Baseline Array (VLBA).</p>
-                    <a href="#" class="btn btn-link stretched-link px-0">
-                      Read More
-                      <i class="bx bx-right-arrow-alt fs-xl ms-1"></i>
-                    </a>
-                  </div>
+            <!-- Item -->
+            <div class="col">
+              <div class="card bg-secondary border-0 flex-column flex-sm-row flex-md-column flex-xxl-row align-items-top card-hover border-primary h-100 ">
+                <!-- <img src="assets/img/landing/medical/icons/doctor.svg" width="168" alt="Doctor icon"> -->
+                <div class="card-body text-center text-sm-start text-md-center text-xxl-start pb-3 pb-sm-2 pb-md-3 pb-xxl-2">
+                  <h3 class="h6 mb-2 mt-n4 mt-sm-0 mt-md-n4 mt-xxl-0">National Radio Astronomy Observatory (NRAO)</h3>
+                  <p class="fs-sm mb-1">Two annual deadlines on February 1st and August 1st. Includes the Very Large Array (VLA) and Very Long Baseline Array (VLBA).</p>
+                  <a href="#" class="btn btn-link stretched-link px-0">
+                    Read More
+                    <i class="bx bx-right-arrow-alt fs-xl ms-1"></i>
+                  </a>
                 </div>
               </div>
+            </div>
 
-              <!-- Item -->
-              <div class="col">
-                <div class="card bg-secondary border-0 flex-column flex-sm-row flex-md-column flex-xxl-row align-items-top card-hover border-primary h-100 ">
-                  <!-- <img src="assets/img/landing/medical/icons/doctor.svg" width="168" alt="Doctor icon"> -->
-                  <div class="card-body text-center text-sm-start text-md-center text-xxl-start pb-3 pb-sm-2 pb-md-3 pb-xxl-2">
-                    <h3 class="h6 mb-2 mt-n4 mt-sm-0 mt-md-n4 mt-xxl-0">Green Bank Observatory (GBO)</h3>
-                    <p class="fs-sm mb-1">Annual deadlines on February 1st and August 1st.</p>
-                    <a href="#" class="btn btn-link stretched-link px-0">
-                      Read More
-                      <i class="bx bx-right-arrow-alt fs-xl ms-1"></i>
-                    </a>
-                  </div>
+            <!-- Item -->
+            <div class="col">
+              <div class="card bg-secondary border-0 flex-column flex-sm-row flex-md-column flex-xxl-row align-items-top card-hover border-primary h-100 ">
+                <!-- <img src="assets/img/landing/medical/icons/doctor.svg" width="168" alt="Doctor icon"> -->
+                <div class="card-body text-center text-sm-start text-md-center text-xxl-start pb-3 pb-sm-2 pb-md-3 pb-xxl-2">
+                  <h3 class="h6 mb-2 mt-n4 mt-sm-0 mt-md-n4 mt-xxl-0">Green Bank Observatory (GBO)</h3>
+                  <p class="fs-sm mb-1">Annual deadlines on February 1st and August 1st.</p>
+                  <a href="#" class="btn btn-link stretched-link px-0">
+                    Read More
+                    <i class="bx bx-right-arrow-alt fs-xl ms-1"></i>
+                  </a>
                 </div>
               </div>
-
-
-              <!-- Item -->
-              <div class="col">
-                <div class="card bg-secondary border-0 flex-column flex-sm-row flex-md-column flex-xxl-row align-items-top card-hover border-primary h-100 ">
-                  <!-- <img src="assets/img/landing/medical/icons/doctor.svg" width="168" alt="Doctor icon"> -->
-                  <div class="card-body text-center text-sm-start text-md-center text-xxl-start pb-3 pb-sm-2 pb-md-3 pb-xxl-2">
-                    <!-- <a href="#" class="badge fs-sm text-white bg-primary shadow-primary text-decoration-none mb-3">Optical</a>
-                    <a href="#" class="badge fs-sm text-white bg-primary shadow-primary text-decoration-none mb-3">Radio</a> -->
-                    <h3 class="h6 mb-2 mt-n4 mt-sm-0 mt-md-n4 mt-xxl-0">Australia Telescope National Facility (ATNF)</h3>
-                    <p class="fs-sm mb-1">Two annual deadlines on June 15th and December 15th. Includes the Australia Telescope Compact Array (ATCA), Australian Long Baseline Array (LBA) and Parkes Telescope.</p>
-                    <a href="#" class="btn btn-link stretched-link px-0">
-                      Read More
-                      <i class="bx bx-right-arrow-alt fs-xl ms-1"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Item -->
-              <div class="col">
-                <div class="card bg-secondary border-0 flex-column flex-sm-row flex-md-column flex-xxl-row align-items-top card-hover border-primary h-100 ">
-                  <!-- <img src="assets/img/landing/medical/icons/doctor.svg" width="168" alt="Doctor icon"> -->
-                  <div class="card-body text-center text-sm-start text-md-center text-xxl-start pb-3 pb-sm-2 pb-md-3 pb-xxl-2">
-                    <!-- <a href="#" class="badge fs-sm text-white bg-primary shadow-primary text-decoration-none mb-3">Radio</a> -->
-                    <h3 class="h6 mb-2 mt-n4 mt-sm-0 mt-md-n4 mt-xxl-0">South African Radio Astronomy Observatory (SARAO)</h3>
-                    <p class="fs-sm mb-1">MeerKAT, with varying annual deadlines for open time.</p>
-                    <a href="#" class="btn btn-link stretched-link px-0">
-                      Read More
-                      <i class="bx bx-right-arrow-alt fs-xl ms-1"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Item -->
-              <div class="col">
-                <div class="card bg-secondary border-0 flex-column flex-sm-row flex-md-column flex-xxl-row align-items-top card-hover border-primary h-100 ">
-                  <!-- <img src="assets/img/landing/medical/icons/doctor.svg" width="168" alt="Doctor icon"> -->
-                  <div class="card-body text-center text-sm-start text-md-center text-xxl-start pb-3 pb-sm-2 pb-md-3 pb-xxl-2">
-                    <!-- <a href="#" class="badge fs-sm text-white bg-primary shadow-primary text-decoration-none mb-3">Radio</a> -->
-                    <h3 class="h6 mb-2 mt-n4 mt-sm-0 mt-md-n4 mt-xxl-0">Low Frequency Array (LOFAR)</h3>
-                    <p class="fs-sm mb-1">Two annual deadlines in March and September.</p>
-                    <a href="#" class="btn btn-link stretched-link px-0">
-                      Read More
-                      <i class="bx bx-right-arrow-alt fs-xl ms-1"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-
             </div>
 
 
-            <!-- <div id="references"></div>
-            <h2 class="h4 pt-3">References</h2>
-            <p class="mb-4 pb-2">Purus ornare nisl est nec. Nunc, enim tellus pretium viverra quisque id in metus volutpat. Urna eget velit venenatis, commodo eget massa. Magna donec dictum cras nullam platea. Diam rhoncus massa lectus pellentesque tristique. Amet commodo, egestas vitae bibendum. Volutpat elit condimentum integer tortor porttitor justo vel lobortis risus. Lacinia pellentesque fermentum tellus orci mauris, velit duis eget. Commodo justo, hac ligula molestie felis, iaculis. Vitae dui at ante orci, dictum fusce. Urna, sed urna fringilla faucibus euismod aliquet nec. Quis libero, fermentum amet eu, condimentum auctor. Sit vel ipsum sem tempus gravida et. Scelerisque blandit orci, est quis. Nisi, tellus amet est nascetur habitant faucibus ornare et vivamus.</p> -->
+            <!-- Item -->
+            <div class="col">
+              <div class="card bg-secondary border-0 flex-column flex-sm-row flex-md-column flex-xxl-row align-items-top card-hover border-primary h-100 ">
+                <!-- <img src="assets/img/landing/medical/icons/doctor.svg" width="168" alt="Doctor icon"> -->
+                <div class="card-body text-center text-sm-start text-md-center text-xxl-start pb-3 pb-sm-2 pb-md-3 pb-xxl-2">
+                  <!-- <a href="#" class="badge fs-sm text-white bg-primary shadow-primary text-decoration-none mb-3">Optical</a>
+                  <a href="#" class="badge fs-sm text-white bg-primary shadow-primary text-decoration-none mb-3">Radio</a> -->
+                  <h3 class="h6 mb-2 mt-n4 mt-sm-0 mt-md-n4 mt-xxl-0">Australia Telescope National Facility (ATNF)</h3>
+                  <p class="fs-sm mb-1">Two annual deadlines on June 15th and December 15th. Includes the Australia Telescope Compact Array (ATCA), Australian Long Baseline Array (LBA) and Parkes Telescope.</p>
+                  <a href="#" class="btn btn-link stretched-link px-0">
+                    Read More
+                    <i class="bx bx-right-arrow-alt fs-xl ms-1"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="col">
+              <div class="card bg-secondary border-0 flex-column flex-sm-row flex-md-column flex-xxl-row align-items-top card-hover border-primary h-100 ">
+                <!-- <img src="assets/img/landing/medical/icons/doctor.svg" width="168" alt="Doctor icon"> -->
+                <div class="card-body text-center text-sm-start text-md-center text-xxl-start pb-3 pb-sm-2 pb-md-3 pb-xxl-2">
+                  <!-- <a href="#" class="badge fs-sm text-white bg-primary shadow-primary text-decoration-none mb-3">Radio</a> -->
+                  <h3 class="h6 mb-2 mt-n4 mt-sm-0 mt-md-n4 mt-xxl-0">South African Radio Astronomy Observatory (SARAO)</h3>
+                  <p class="fs-sm mb-1">MeerKAT, with varying annual deadlines for open time.</p>
+                  <a href="#" class="btn btn-link stretched-link px-0">
+                    Read More
+                    <i class="bx bx-right-arrow-alt fs-xl ms-1"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="col">
+              <div class="card bg-secondary border-0 flex-column flex-sm-row flex-md-column flex-xxl-row align-items-top card-hover border-primary h-100 ">
+                <!-- <img src="assets/img/landing/medical/icons/doctor.svg" width="168" alt="Doctor icon"> -->
+                <div class="card-body text-center text-sm-start text-md-center text-xxl-start pb-3 pb-sm-2 pb-md-3 pb-xxl-2">
+                  <!-- <a href="#" class="badge fs-sm text-white bg-primary shadow-primary text-decoration-none mb-3">Radio</a> -->
+                  <h3 class="h6 mb-2 mt-n4 mt-sm-0 mt-md-n4 mt-xxl-0">Low Frequency Array (LOFAR)</h3>
+                  <p class="fs-sm mb-1">Two annual deadlines in March and September.</p>
+                  <a href="#" class="btn btn-link stretched-link px-0">
+                    Read More
+                    <i class="bx bx-right-arrow-alt fs-xl ms-1"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div id="references"></div>
+          <h2 class="h4 pt-3">References</h2>
+          <p class="mb-4 pb-2">Purus ornare nisl est nec. Nunc, enim tellus pretium viverra quisque id in metus volutpat. Urna eget velit venenatis, commodo eget massa. Magna donec dictum cras nullam platea. Diam rhoncus massa lectus pellentesque tristique. Amet commodo, egestas vitae bibendum. Volutpat elit condimentum integer tortor porttitor justo vel lobortis risus. Lacinia pellentesque fermentum tellus orci mauris, velit duis eget. Commodo justo, hac ligula molestie felis, iaculis. Vitae dui at ante orci, dictum fusce. Urna, sed urna fringilla faucibus euismod aliquet nec. Quis libero, fermentum amet eu, condimentum auctor. Sit vel ipsum sem tempus gravida et. Scelerisque blandit orci, est quis. Nisi, tellus amet est nascetur habitant faucibus ornare et vivamus.</p> -->
 
         </div>
         
-        <!-- <div class="col-lg-3 position-relative"> -->
         <div class="col-xl-3 col-lg-5 position-relative pt-5">
           <div class="sticky-top ms-xl-5 ms-lg-4 ps-xxl-4" style="top: 105px !important; margin-left: 0px !important;">
 
@@ -760,7 +739,7 @@
 
                   <li class="pb-1 mb-1">
                     <div class="mb-0">
-		      <a class="nav-link" href="#resources">Complementary Opportunities</a>
+		                  <a class="nav-link" href="#resources">Complementary Opportunities</a>
                     </div>
                   </li>
 
@@ -809,22 +788,25 @@
             <!-- <h6 class='mt-0 mb-0' style="line-height:25px">National Aeronautics<br> and Space Administration</h6> -->
             </div>
             <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
-                  <ul class="nav flex-column pb-lg-1 mb-lg-0 mt-3">
-                    <li><span class="h6">NASA Official: </span> Daniel Kocevski</li>
-                    <li><span class="h6">Page Editor: </span> Daniel Kocevski</li>
-                    <li><span class="h6">Page Last Updated: </span> July 13th, 2022</li>
-                  </ul>
+              <ul class="nav flex-column pb-lg-1 mb-lg-0 mt-3">
+                <li><span class="h6">NASA Official: </span> Daniel Kocevski</li>
+                <li><span class="h6">Page Editor: </span> Daniel Kocevski</li>
+                <li><span class="h6">Page Last Updated: </span> July 13th, 2022</li>
+              </ul>
+             <!--  <div class="form-check form-switch mode-switch pt-1" data-bs-toggle="mode">
+                <input type="checkbox" class="form-check-input" id="theme-mode">
+                <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
+                <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
+              </div> -->
             </div>
-
             <p class="pt-5">
-                <a href="https://www.nasa.gov/about/highlights/HP_Privacy.html">Privacy Policy</a>
-                 &nbsp;| &nbsp;
-                <a href="http://odeo.hq.nasa.gov/nofear.html">No Fear Act</a>
-                 &nbsp;| &nbsp;
-                <a href="https://www.nasa.gov/FOIA/index.html">FOIA</a>
-                 &nbsp;| &nbsp;
-                <a href="https://www.nasa.gov/about/highlights/HP_Privacy.html">Contact Us</a>
-
+              <a href="https://www.nasa.gov/about/highlights/HP_Privacy.html">Privacy Policy</a>
+               &nbsp;| &nbsp;
+              <a href="http://odeo.hq.nasa.gov/nofear.html">No Fear Act</a>
+               &nbsp;| &nbsp;
+              <a href="https://www.nasa.gov/FOIA/index.html">FOIA</a>
+               &nbsp;| &nbsp;
+              <a href="https://www.nasa.gov/about/highlights/HP_Privacy.html">Contact Us</a>
             </p>
           </div>
 
@@ -844,26 +826,24 @@
               </div>
 
               <!-- MOSSAIC Column -->
-              <div class="col-lg-4 col-lg-5 mt-4 pt-0 pt-lg-0 text-end">
-                <h4 class="mt-2 mb-2">MOSSAIC</h4>
+              <div class="col-lg-4 col-lg-5 mt-5 pt-5 pt-lg-0 text-end">
+                <h5 class="mb-0 mt-4"><a class="nav nav-link d-inline-block px-0 pt-0 pb-0" href="about.html">MOSSAIC</a></h5>
                 <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
-                      <ul class="nav flex-column pb-lg-1 mb-lg-0 mt-3">
-                        <li><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-0">Goddard Space Flight Center</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-0 pb-0">Marshall Space Flight Center</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-0 pb-0">multimessenger.nasa.gov</a></li>
+                      <ul class="nav flex-column pb-lg-1 mb-lg-0 mt-0">
+                        <li class="nav-item"><a href="index.html" class="nav-link d-inline-block px-0 pt-0 pb-0 mt-1">Multimessenger.nasa.gov</a></li>
+                        <li><a href="http://gsfc.nasa.gov" class="nav-link d-inline-block px-0 pt-0 pb-0">Goddard Space Flight Center</a></li>
+                        <li class="nav-item"><a href="http://mfsc.nasa.gov" class="nav-link d-inline-block px-0 pt-0 pb-0">Marshall Space Flight Center</a></li>
                       </ul>
                 </div>
-                <div class="mb-4 pb-lg-3 mt-4">
-                  <a href="#" class="btn btn-icon btn-secondary btn-facebook me-2 mb-2">
-                    <i class="bx bxl-facebook"></i>
-                  </a>
-                  <a href="#" class="btn btn-icon btn-secondary btn-twitter me-2 mb-2">
-                    <i class="bx bxl-twitter"></i>
-                  </a>
-                  <a href="#" class="btn btn-icon btn-secondary btn-instagram me-2 mb-2">
-                    <i class="bx bxl-instagram"></i>
-                  </a>
+
+                <div class="mb-4 pb-lg-3 mt-4 float-end">
+                  <div class="form-check form-switch mode-switch pt-1" data-bs-toggle="mode">
+                    <input type="checkbox" class="form-check-input" id="theme-mode">
+                    <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
+                    <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
+                  </div>
                 </div>
+
               </div>
             </div>
 
