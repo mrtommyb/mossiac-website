@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>MOSSAIC</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Silicon - Multipurpose Technology Bootstrap Template">
+    <meta name="keywords" content="bootstrap, business, creative agency, mobile app showcase, saas, fintech, finance, online courses, software, medical, conference landing, services, e-commerce, shopping cart, multipurpose, shop, ui kit, marketing, seo, landing, blog, portfolio, html5, css3, javascript, gallery, slider, touch, creative">
+    <meta name="author" content="Createx Studio">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#6366f1">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Vendor Styles -->
+    <link rel="stylesheet" media="screen" href="assets/vendor/boxicons/css/boxicons.min.css"/>
+    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" media="screen" href="assets/vendor/lightgallery/css/lightgallery-bundle.min.css"/>
+
+    <!-- Main Theme Styles + Bootstrap -->
+    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+
+    <!-- Page loading styles -->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .dark-mode .page-loading {
+        background-color: #0b0f19;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #9397ad;
+      }
+      .dark-mode .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #b4b7c9;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      .dark-mode .page-spinner {
+        border-color: rgba(255,255,255,.4);
+        border-right-color: transparent;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+
+    <!-- Theme mode -->
+    <script>
+      let mode = window.localStorage.getItem('mode'),
+          root = document.getElementsByTagName('html')[0];
+      if (mode !== null && mode === 'dark') {
+        root.classList.add('dark-mode');
+      } else {
+        root.classList.remove('dark-mode');
+      }
+    </script>
+
+    <!-- Page loading scripts -->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 1000);
+        };
+      })();
+    </script>
+  </head>
+
+  <!-- Body -->
+  <body>
+
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+
+
+    <!-- Page wrapper for sticky footer -->
+    <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+    <main class="page-wrapper">
+
+
+      <!-- Navbar -->
+      <header class="header navbar navbar-expand-lg position-absolute navbar-sticky">
+      <!-- <header class="header navbar navbar-expand-lg bg-light navbar-sticky"> -->
+        <div class="container px-3">
+          <a href="index.html" class="navbar-brand pe-3">
+            <!-- <img src="assets/img/logo.svg" width="47" alt="Silicon"> -->
+            <img src="https://www1.grc.nasa.gov/wp-content/themes/nasapress/dist/images/logo-nasa.svg" width="75" alt="NASA logo">
+            <!-- <span class='navbar-title' >Multimessenger<br> Astrophysics</span> -->
+            <p class='navbar-title mt-0 mb-0' style="line-height:25px">Multimessenger<br> Astrophysics</p>
+          </a>
+          <div id="navbarNav" class="offcanvas offcanvas-end">
+            <div class="offcanvas-header border-bottom">
+              <h5 class="offcanvas-title">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0"> -->
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-end">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="missions.html" class="nav-link dropdown-toggle" aria-current="page">Missions</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="missions.html#overview" class="dropdown-item">Overview</a></li>
+                    <li><a href="missions.html#timeline" class="dropdown-item">Timeline</a></li>
+                    <li><a href="missions.html#active" class="dropdown-item">Active</a></li>
+                    <li><a href="missions.html#development" class="dropdown-item">Development</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="tools.html" class="nav-link dropdown-toggle" aria-current="page">Tools</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="missions.html#overview" class="dropdown-item">Overview</a></li>
+                    <li><a href="missions.html#reporting" class="dropdown-item">Rapid Reporting Resources</a></li>
+                    <li><a href="missions.html#analysis" class="dropdown-item">Data Analysis Toolkits</a></li>
+                    <li><a href="missions.html#planning" class="dropdown-item">Observations Planning Tools</a></li>
+                    <li><a href="missions.html#archives" class="dropdown-item">Data Archives & Repositories</a></li>
+                  </ul>
+                </li>              
+                <li class="nav-item dropdown">
+                  <a href="proposals.html" class="nav-link dropdown-toggle" aria-current="page">Proposals</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="missions.html#proposals" class="dropdown-item">Proposal Opportunities</a></li>
+                    <li><a href="missions.html#programs" class="dropdown-item">Guest Observer & Investigator Programs</a></li>
+                    <li><a href="missions.html#joint" class="dropdown-item">Joint Observing Opportunities</a></li>
+                    <li><a href="missions.html#resources" class="dropdown-item">Complementary Opportunities</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="conferences.html" class="nav-link dropdown-toggle" aria-current="page">Conferences</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="conferences.html#upcoming" class="dropdown-item">Upcoming Meetings</a></li>
+                    <li><a href="conferences.html#past" class="dropdown-item">Past Meetings</a></li>
+                    <li><a href="conferences.html#resources" class="dropdown-item">Presentation Resources</a></li>
+                  </ul>
+                </li>    
+                <li class="nav-item">
+                  <a href="about.html" class="nav-link">About</a>
+                </li>                             
+              </ul>
+            </div>     
+          </div>            
+        </div>
+      </header>
+
+      <!-- Page image (parallax) -->
+      <!-- <div class="jarallax mb-lg-5 mb-4" data-jarallax data-speed="0.35" style="height: 30.45vw; min-height: 300px;">
+        <div class="jarallax-img" style="background-image: url(assets/img/custom/729665main_A-BlackHoleArt-pia16695_full.jpg);"></div>
+      </div>   -->
+
+
+      <!-- Hero -->
+      <section class="position-relative pt-5">
+
+        <!-- Background -->
+        <div class="position-absolute top-0 start-0 w-100 bg-position-bottom-center bg-size-cover bg-repeat-0" style="background-image: url(assets/img/about/hero-bg.svg);">
+          <div class="d-lg-none" style="height: 960px;"></div>
+          <div class="d-none d-lg-block" style="height: 930px;"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="container position-relative zindex-5 pt-5">
+          <div class="row">
+            <div class="col-lg-6">
+
+              <!-- Breadcrumb -->
+              <nav class="pt-md-2 pt-lg-3 pb-4 pb-md-5 mb-xl-4" aria-label="breadcrumb">
+                <!-- <ol class="breadcrumb mb-0">
+                  <li class="breadcrumb-item">
+                    <a href="index.html"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">About v.1</li>
+                </ol> -->
+              </nav>
+
+              <!-- Text -->
+              <h1 class="pb-2 pb-md-3">About MOSSAIC</h1>
+              <p class="" style="max-width: 600px;">Multimessenger and Time Domain Astrophysics (MMA/TDA) are, by design, collaborative disciplines. Progress in this field depends on many stakeholders working together efficiently - not only scientists from the astronomy and physics, ground- and space-based communities, but also engineers, software developers, data and communication scientists, and more. The vision at the core of The Multimessenger Operational Science Support & Astrophysical Information Collaboration (MOSSAIC) initiative is the recognition that progress in MMA/TDA science can only be achieved if all stakeholders Communicate (often and regularly), Coordinate (plan and execute together), and Collaborate (share ideas and tools) - the three Cs. The challenges to MMA/TDA of the 21st century, with the improved sensitivities of ground- and space-based facilities, require nothing less. </p>
+
+              <p class="pb-4 mb-1 mb-md-2 mb-lg-3" style="max-width: 600px;">MOSSAIC is an initiative of two NASA Centers (Goddard and Marshall Space Flight Centers), with a vision to include other stakeholders from Universities, government Labs, non-profits, and industry as active partners. It brings together current research, capabilities, and resources needed to support MMA/TDA scientists around the world. MOSSAIC is primarily intended as a service to the community, to facilitate connections between ground- and space-based observers, theorists, and data scientists from the astronomy and physics fields. It also aims to provide data analysis and interpretation tools, observations planning capabilities, proposal preparation and submission support, mission concept development, and more. Each MOSSAIC partner has equal weight and provides unique contributions, and has pledged to work with the others while maintaining their identity and autonomy.</p>
+
+            </div>
+
+            <!-- Images -->
+            <div class="col-lg-6 mt-xl-3 pt-5 pt-lg-4">
+              <div class="row row-cols-2 gx-3 gx-lg-4">
+                <div class="col pt-lg-5 mt-lg-1">
+                  <img src="assets/img/custom/ANUNCIAN.jpg" class="d-block rounded-3 mb-3 mb-lg-4" alt="Image">
+                  <img src="assets/img/custom/about_02.jpg" class="d-block rounded-3" alt="Image">
+                </div>
+                <div class="col">
+                  <img src="assets/img/custom/about_03.jpg" class="d-block rounded-3 mb-3 mb-lg-4" alt="Image">
+                  <img src="assets/img/custom/about_04.jpg" class="d-block rounded-3" alt="Image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Contact CTA -->
+      <section class="container pt-2 pb-4 pb-md-5 pb-5 mt-0" style="margin-top: -156px; margin-bottom: 220px; transform: translateY(156px);">
+        <div class="card border-0 bg-gradient-primary">
+          <div class="card-body p-md-5 p-4 bg-size-cover" style="background-image: url(assets/img/landing/digital-agency/contact-bg.png);">
+            <div class="py-md-5 py-4 text-center">
+              <h3 class="h4 fw-normal text-light opacity-75">Interested in contributing to the MOSSAIC effort?</h3>
+              <a href="mailto:daniel.kocevski@nasa.gov" class="display-6 text-light">Contact us!</a>
+              <div class="pt-md-5 pt-4 pb-md-2">
+                <!-- <a href="contacts-v1.html" class="btn btn-lg btn-light">Contact us</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer dark-mode bg-dark border-top border-light pt-5">
+      <div class="container pt-lg-4">
+        <div class="row pb-5">
+          <div class="col-lg-4 col-md-6">
+            <div class="navbar-brand text-dark p-0 me-0 mb-3 mb-lg-4">
+            <img src="https://www1.grc.nasa.gov/wp-content/themes/nasapress/dist/images/logo-nasa.svg" width="75" alt="NASA logo">
+            <!-- <h6>National Aeronautics and Space Administration</h6> -->
+            <h5 class='mt-1 mb-0'>National Aeronautics and Space Administration</h5>
+            <!-- <h6 class='mt-0 mb-0' style="line-height:25px">National Aeronautics<br> and Space Administration</h6> -->
+            </div>
+            <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+              <ul class="nav flex-column pb-lg-1 mb-lg-0 mt-3">
+                <li><span class="h6">NASA Official: </span> Daniel Kocevski</li>
+                <li><span class="h6">Page Editor: </span> Daniel Kocevski</li>
+                <li><span class="h6">Page Last Updated: </span> July 13th, 2022</li>
+              </ul>
+             <!--  <div class="form-check form-switch mode-switch pt-1" data-bs-toggle="mode">
+                <input type="checkbox" class="form-check-input" id="theme-mode">
+                <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
+                <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
+              </div> -->
+            </div>
+            <p class="pt-5">
+              <a href="https://www.nasa.gov/about/highlights/HP_Privacy.html">Privacy Policy</a>
+               &nbsp;| &nbsp;
+              <a href="http://odeo.hq.nasa.gov/nofear.html">No Fear Act</a>
+               &nbsp;| &nbsp;
+              <a href="https://www.nasa.gov/FOIA/index.html">FOIA</a>
+               &nbsp;| &nbsp;
+              <a href="https://www.nasa.gov/about/highlights/HP_Privacy.html">Contact Us</a>
+            </p>
+          </div>
+
+          <div class="col-xl-6 col-lg-7 col-md-5 offset-xl-2 offset-md-1 pt-4 pt-md-1 pt-lg-0">
+
+            <div id="footer-links" class="row">
+              <div class="col-lg-4">
+                <h6 class="mb-2">
+                  <a href="#useful-links" class="d-block text-dark dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">Useful Links</a>
+                </h6>
+
+                <!-- Empty Column -->
+                <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+
+                </div>
+
+              </div>
+
+              <!-- MOSSAIC Column -->
+              <div class="col-lg-4 col-lg-5 mt-5 pt-5 pt-lg-0 text-end">
+                <h5 class="mb-0 mt-4"><a class="nav nav-link d-inline-block px-0 pt-0 pb-0" href="about.html">MOSSAIC</a></h5>
+                <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                      <ul class="nav flex-column pb-lg-1 mb-lg-0 mt-0">
+                        <li class="nav-item"><a href="index.html" class="nav-link d-inline-block px-0 pt-0 pb-0 mt-1">Multimessenger.nasa.gov</a></li>
+                        <li><a href="http://gsfc.nasa.gov" class="nav-link d-inline-block px-0 pt-0 pb-0">Goddard Space Flight Center</a></li>
+                        <li class="nav-item"><a href="http://mfsc.nasa.gov" class="nav-link d-inline-block px-0 pt-0 pb-0">Marshall Space Flight Center</a></li>
+                      </ul>
+                </div>
+
+                <div class="mb-4 pb-lg-3 mt-4 float-end">
+                  <div class="form-check form-switch mode-switch pt-1" data-bs-toggle="mode">
+                    <input type="checkbox" class="form-check-input" id="theme-mode">
+                    <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
+                    <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+
+    <!-- Back to top button -->
+    <a href="#top" class="btn-scroll-top" data-scroll>
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+
+
+    <!-- Vendor Scripts -->
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/lightgallery/lightgallery.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/video/lg-video.min.js"></script>
+
+    <!-- Main Theme Script -->
+    <script src="assets/js/theme.min.js"></script>
+  </body>
+</html>

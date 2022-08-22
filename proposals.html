@@ -152,6 +152,7 @@
     <main class="page-wrapper">
 
       <!-- Navbar -->
+      <!-- <header class="header navbar navbar-expand-lg position-absolute navbar-sticky"> -->
       <header class="header navbar navbar-expand-lg bg-light navbar-sticky">
         <div class="container px-3">
           <a href="index.html" class="navbar-brand pe-3">
@@ -176,12 +177,14 @@
                   <ul class="dropdown-menu">
                     <li><a href="missions.html#overview" class="dropdown-item">Overview</a></li>
                     <li><a href="missions.html#timeline" class="dropdown-item">Timeline</a></li>
-                    <li><a href="missions.html#capabilities" class="dropdown-item">Capabilities</a></li>
+                    <li><a href="missions.html#active" class="dropdown-item">Active</a></li>
+                    <li><a href="missions.html#development" class="dropdown-item">Development</a></li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown">
-                  <a href="missions.html" class="nav-link dropdown-toggle" aria-current="page">Tools</a>
+                  <a href="tools.html" class="nav-link dropdown-toggle" aria-current="page">Tools</a>
                   <ul class="dropdown-menu">
+                    <li><a href="missions.html#overview" class="dropdown-item">Overview</a></li>
                     <li><a href="missions.html#reporting" class="dropdown-item">Rapid Reporting Resources</a></li>
                     <li><a href="missions.html#analysis" class="dropdown-item">Data Analysis Toolkits</a></li>
                     <li><a href="missions.html#planning" class="dropdown-item">Observations Planning Tools</a></li>
@@ -189,12 +192,12 @@
                   </ul>
                 </li>              
                 <li class="nav-item dropdown">
-                  <a href="missions.html" class="nav-link dropdown-toggle" aria-current="page">Proposals</a>
+                  <a href="proposals.html" class="nav-link dropdown-toggle" aria-current="page">Proposals</a>
                   <ul class="dropdown-menu">
                     <li><a href="missions.html#proposals" class="dropdown-item">Proposal Opportunities</a></li>
                     <li><a href="missions.html#programs" class="dropdown-item">Guest Observer & Investigator Programs</a></li>
                     <li><a href="missions.html#joint" class="dropdown-item">Joint Observing Opportunities</a></li>
-                    <li><a href="missions.html#nonnasa" class="dropdown-item">Complementary Opportunities</a></li>
+                    <li><a href="missions.html#resources" class="dropdown-item">Complementary Opportunities</a></li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -214,6 +217,7 @@
         </div>
       </header>
 
+
       <!-- Breadcrumb -->
       <nav class="container py-4 mb-2 my-lg-3" aria-label="breadcrumb">
         <!-- <ol class="breadcrumb mb-0">
@@ -230,7 +234,7 @@
 
           <!-- Content -->
           <div class="col-lg-9">
-
+            <div id="proposals"></div>
             <h1 class="border-bottom pb-4" id="Overview">Proposal Opportunities</h1>
             <img src="assets/img/landing/conference/hero-bg.png" class="position-absolute top-50 translate-middle-y ms-lg-n4" width="866" alt="Background shapes">
 
@@ -285,10 +289,10 @@
                   </div>
                 </div>
               </div>
-              
+
             </div>
 
-            <div id="gops"></div>
+            <div id="programs"></div>
             <h2 class="h4">Guest Observer & Investigator Programs</h2>
 
             <p class="mb-4 pb-2">Mission specific Guest Observer (GO) and Guest Investigator (GI) programs, part of NASA's Research Opportunities in Space and Earth Sciences (ROSES) Announcement, provides opportunities for community members to carry out basic research relevant to each mission. Below is a list of proposal opportunities for missions with significant relevance to multimessenger astronomy.</p>
@@ -302,7 +306,7 @@
                   <div class="card-body text-center text-sm-start text-md-center text-xxl-start pb-3 pb-sm-2 pb-md-3 pb-xxl-2 text-align-top">
                     <h3 class="h6 mb-2 mt-n4 mt-sm-0 mt-md-n4 mt-xxl-0">Neil Gehrels Swift Observatory Guest Investigator Program</h3>
                     <p class="fs-sm mb-1">Cycle 19 proposals are due Thursday, September 22, 2022</p>
-                    <a href="https://science.nasa.gov/researchers/sara/grant-solicitations" class="btn btn-link stretched-link px-0">
+                    <a href="https://swift.gsfc.nasa.gov/proposals/swiftgi.html" class="btn btn-link stretched-link px-0">
                       Learn More
                       <i class="bx bx-right-arrow-alt fs-xl ms-1"></i>
                     </a>
@@ -314,11 +318,11 @@
               <div class="col">
                 <div class="card bg-secondary border-0 flex-column flex-sm-row flex-md-column flex-xxl-row align-items-top card-hover border-primary h-100 ">
                   <!-- <img src="assets/img/landing/medical/icons/doctor.svg" width="168" alt="Doctor icon"> -->
-                  <div class="card-body text-center text-sm-start text-md-center text-xxl-start pb-3 pb-sm-2 pb-md-3 pb-xxl-2">
-                    <h3 class="h6 mb-2 mt-n4 mt-sm-0 mt-md-n4 mt-xxl-0">ROSES 2022</h3>
-                    <p class="fs-sm mb-1">The Research Opportunities in Space and Earth Sciences (ROSES) 2022 is an omnibus announcement and the comprehensive list of NASA's funding opportunities.</p>
-                    <a href="https://nspires.nasaprs.com/external/viewrepositorydocument/cmdocumentid=735966/solicitationId=%7BBCEE336B-D550-CCBA-1C8C-7A866DB06F45%7D/viewSolicitationDocument=1/FULL%20ROSES-2020_Amend89.pdf" class="btn btn-link stretched-link px-0">
-                      Read ROSES 2020
+                  <div class="card-body text-center text-sm-start text-md-center text-xxl-start pb-3 pb-sm-2 pb-md-3 pb-xxl-2 text-align-top">
+                    <h3 class="h6 mb-2 mt-n4 mt-sm-0 mt-md-n4 mt-xxl-0">Hubble Space Telescope Observations</h3>
+                    <p class="fs-sm mb-1">Cycle 30 1st Mid-Cycle proposals due September 30, 2022</p>
+                    <a href="https://hst-docs.stsci.edu/hsp" class="btn btn-link stretched-link px-0">
+                      Learn More
                       <i class="bx bx-right-arrow-alt fs-xl ms-1"></i>
                     </a>
                   </div>
@@ -329,16 +333,17 @@
               <div class="col">
                 <div class="card bg-secondary border-0 flex-column flex-sm-row flex-md-column flex-xxl-row align-items-top card-hover border-primary h-100 ">
                   <!-- <img src="assets/img/landing/medical/icons/doctor.svg" width="168" alt="Doctor icon"> -->
-                  <div class="card-body text-center text-sm-start text-md-center text-xxl-start pb-3 pb-sm-2 pb-md-3 pb-xxl-2">
-                    <h3 class="h6 mb-2 mt-n4 mt-sm-0 mt-md-n4 mt-xxl-0">NASA NSPIRES</h3>
-                    <p class="fs-sm mb-1">The NASA Solicitation and Proposal Integrated Review and Evaluation System (NSPIRES) allows users to search for and view future, open, and past NASA research announcements.</p>
-                    <a href="https://nspires.nasaprs.com" class="btn btn-link stretched-link px-0">
-                      Visit nspires.nasaprs.com
+                  <div class="card-body text-center text-sm-start text-md-center text-xxl-start pb-3 pb-sm-2 pb-md-3 pb-xxl-2 text-align-top">
+                    <h3 class="h6 mb-2 mt-n4 mt-sm-0 mt-md-n4 mt-xxl-0">Fermi Guest Investigator Program</h3>
+                    <p class="fs-sm mb-1">Cycle 16 proposals are due in early 2023</p>
+                    <a href="https://fermi.gsfc.nasa.gov/ssc/proposals/" class="btn btn-link stretched-link px-0">
+                      Learn More
                       <i class="bx bx-right-arrow-alt fs-xl ms-1"></i>
                     </a>
                   </div>
                 </div>
               </div>
+
 
             </div>
 
@@ -721,25 +726,25 @@
                   
                   <li class="pb-1 mb-1">
                     <div class="mb-0">
-                      <a class="nav-link" href="#overview">Overview</a>
+                      <a class="nav nav-link p-0" href="#overview">Overview</a>
                     </div>
                   </li>
 
                   <li class="pb-1 mb-1">
                     <div class="mb-0">
-                      <a class="nav-link" href="#gops">Guest Observer & Investigator Programs</a>
+                      <a class="nav nav-link p-0" href="#gops">Guest Observer & Investigator Programs</a>
                     </div>
                   </li>
 
                   <li class="pb-1 mb-1">
                     <div class="mb-0">
-                      <a class="nav-link" href="#joint">Joint Observing Opportunities</a>
+                      <a class="nav nav-link p-0" href="#joint">Joint Observing Opportunities</a>
                     </div>
                   </li>
 
                   <li class="pb-1 mb-1">
                     <div class="mb-0">
-		                  <a class="nav-link" href="#resources">Complementary Opportunities</a>
+		                  <a class="nav nav-link p-0" href="#resources">Complementary Opportunities</a>
                     </div>
                   </li>
 
